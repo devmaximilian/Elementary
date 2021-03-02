@@ -1,0 +1,19 @@
+%{
+    import json
+    
+    def lowercased(str):
+        return str[0].lower() + str[1:]
+    
+    elements = {}
+    with open('../../PeriodicTableJSON.json') as file:
+        elements = json.load(file)['elements']
+}%
+extension Elements {
+% for element in elements:
+    public static var ${lowercased(element['name'])}: Element {
+        return Element(
+            name: "${element['name']}"
+        )
+    }
+% end
+}
