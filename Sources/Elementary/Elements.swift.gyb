@@ -32,10 +32,20 @@ extension Elements {
             meltingPoint: ${valueOrNil(element['melt'])},
             boilingPoint: ${valueOrNil(element['boil'])},
             shells: ${element['shells']},
-            phase: Element.Phase(rawValue: "${element['phase']}").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "${element['atomic_mass']}").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "${lowercased(element['phase'])}").unsafelyUnwrapped,
+            category: Element.Category("${element['category']}"),
             position: (${element['xpos']}, ${element['ypos']})
         )
     }
 % end
+}
+
+extension Elements {
+    public static var allElements: [Element] {
+        return [
+            % for element in elements:
+            ${lowercased(element['name'])},
+            % end
+        ]
+    }
 }

@@ -16,8 +16,8 @@ extension Elements {
             meltingPoint: 13.99,
             boilingPoint: 20.271,
             shells: [1],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "1.008").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("diatomic nonmetal"),
             position: (1, 1)
         )
     }
@@ -34,8 +34,8 @@ extension Elements {
             meltingPoint: 0.95,
             boilingPoint: 4.222,
             shells: [2],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "4.0026022").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("noble gas"),
             position: (18, 1)
         )
     }
@@ -52,8 +52,8 @@ extension Elements {
             meltingPoint: 453.65,
             boilingPoint: 1603,
             shells: [2, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "6.94").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkali metal"),
             position: (1, 2)
         )
     }
@@ -70,8 +70,8 @@ extension Elements {
             meltingPoint: 1560,
             boilingPoint: 2742,
             shells: [2, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "9.01218315").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkaline earth metal"),
             position: (2, 2)
         )
     }
@@ -88,8 +88,8 @@ extension Elements {
             meltingPoint: 2349,
             boilingPoint: 4200,
             shells: [2, 3],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "10.81").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("metalloid"),
             position: (13, 2)
         )
     }
@@ -106,8 +106,8 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: nil,
             shells: [2, 4],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "12.011").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("polyatomic nonmetal"),
             position: (14, 2)
         )
     }
@@ -124,8 +124,8 @@ extension Elements {
             meltingPoint: 63.15,
             boilingPoint: 77.355,
             shells: [2, 5],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "14.007").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("diatomic nonmetal"),
             position: (15, 2)
         )
     }
@@ -142,8 +142,8 @@ extension Elements {
             meltingPoint: 54.36,
             boilingPoint: 90.188,
             shells: [2, 6],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "15.999").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("diatomic nonmetal"),
             position: (16, 2)
         )
     }
@@ -160,8 +160,8 @@ extension Elements {
             meltingPoint: 53.48,
             boilingPoint: 85.03,
             shells: [2, 7],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "18.9984031636").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("diatomic nonmetal"),
             position: (17, 2)
         )
     }
@@ -178,8 +178,8 @@ extension Elements {
             meltingPoint: 24.56,
             boilingPoint: 27.104,
             shells: [2, 8],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "20.17976").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("noble gas"),
             position: (18, 2)
         )
     }
@@ -196,8 +196,8 @@ extension Elements {
             meltingPoint: 370.944,
             boilingPoint: 1156.09,
             shells: [2, 8, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "22.989769282").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkali metal"),
             position: (1, 3)
         )
     }
@@ -214,8 +214,8 @@ extension Elements {
             meltingPoint: 923,
             boilingPoint: 1363,
             shells: [2, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "24.305").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkaline earth metal"),
             position: (2, 3)
         )
     }
@@ -232,8 +232,8 @@ extension Elements {
             meltingPoint: 933.47,
             boilingPoint: 2743,
             shells: [2, 8, 3],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "26.98153857").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("post-transition metal"),
             position: (13, 3)
         )
     }
@@ -250,8 +250,8 @@ extension Elements {
             meltingPoint: 1687,
             boilingPoint: 3538,
             shells: [2, 8, 4],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "28.085").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("metalloid"),
             position: (14, 3)
         )
     }
@@ -268,8 +268,8 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: nil,
             shells: [2, 8, 5],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "30.9737619985").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("polyatomic nonmetal"),
             position: (15, 3)
         )
     }
@@ -286,8 +286,8 @@ extension Elements {
             meltingPoint: 388.36,
             boilingPoint: 717.8,
             shells: [2, 8, 6],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "32.06").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("polyatomic nonmetal"),
             position: (16, 3)
         )
     }
@@ -304,8 +304,8 @@ extension Elements {
             meltingPoint: 171.6,
             boilingPoint: 239.11,
             shells: [2, 8, 7],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "35.45").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("diatomic nonmetal"),
             position: (17, 3)
         )
     }
@@ -322,8 +322,8 @@ extension Elements {
             meltingPoint: 83.81,
             boilingPoint: 87.302,
             shells: [2, 8, 8],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "39.9481").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("noble gas"),
             position: (18, 3)
         )
     }
@@ -340,8 +340,8 @@ extension Elements {
             meltingPoint: 336.7,
             boilingPoint: 1032,
             shells: [2, 8, 8, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "39.09831").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkali metal"),
             position: (1, 4)
         )
     }
@@ -358,8 +358,8 @@ extension Elements {
             meltingPoint: 1115,
             boilingPoint: 1757,
             shells: [2, 8, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "40.0784").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkaline earth metal"),
             position: (2, 4)
         )
     }
@@ -376,8 +376,8 @@ extension Elements {
             meltingPoint: 1814,
             boilingPoint: 3109,
             shells: [2, 8, 9, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "44.9559085").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (3, 4)
         )
     }
@@ -394,8 +394,8 @@ extension Elements {
             meltingPoint: 1941,
             boilingPoint: 3560,
             shells: [2, 8, 10, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "47.8671").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (4, 4)
         )
     }
@@ -412,8 +412,8 @@ extension Elements {
             meltingPoint: 2183,
             boilingPoint: 3680,
             shells: [2, 8, 11, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "50.94151").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (5, 4)
         )
     }
@@ -430,8 +430,8 @@ extension Elements {
             meltingPoint: 2180,
             boilingPoint: 2944,
             shells: [2, 8, 13, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "51.99616").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (6, 4)
         )
     }
@@ -448,8 +448,8 @@ extension Elements {
             meltingPoint: 1519,
             boilingPoint: 2334,
             shells: [2, 8, 13, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "54.9380443").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (7, 4)
         )
     }
@@ -466,8 +466,8 @@ extension Elements {
             meltingPoint: 1811,
             boilingPoint: 3134,
             shells: [2, 8, 14, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "55.8452").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (8, 4)
         )
     }
@@ -484,8 +484,8 @@ extension Elements {
             meltingPoint: 1768,
             boilingPoint: 3200,
             shells: [2, 8, 15, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "58.9331944").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (9, 4)
         )
     }
@@ -502,8 +502,8 @@ extension Elements {
             meltingPoint: 1728,
             boilingPoint: 3003,
             shells: [2, 8, 16, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "58.69344").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (10, 4)
         )
     }
@@ -520,8 +520,8 @@ extension Elements {
             meltingPoint: 1357.77,
             boilingPoint: 2835,
             shells: [2, 8, 18, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "63.5463").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (11, 4)
         )
     }
@@ -538,8 +538,8 @@ extension Elements {
             meltingPoint: 692.68,
             boilingPoint: 1180,
             shells: [2, 8, 18, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "65.382").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (12, 4)
         )
     }
@@ -556,8 +556,8 @@ extension Elements {
             meltingPoint: 302.9146,
             boilingPoint: 2673,
             shells: [2, 8, 18, 3],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "69.7231").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("post-transition metal"),
             position: (13, 4)
         )
     }
@@ -574,8 +574,8 @@ extension Elements {
             meltingPoint: 1211.4,
             boilingPoint: 3106,
             shells: [2, 8, 18, 4],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "72.6308").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("metalloid"),
             position: (14, 4)
         )
     }
@@ -592,8 +592,8 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: nil,
             shells: [2, 8, 18, 5],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "74.9215956").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("metalloid"),
             position: (15, 4)
         )
     }
@@ -610,8 +610,8 @@ extension Elements {
             meltingPoint: 494,
             boilingPoint: 958,
             shells: [2, 8, 18, 6],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "78.9718").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("polyatomic nonmetal"),
             position: (16, 4)
         )
     }
@@ -628,8 +628,8 @@ extension Elements {
             meltingPoint: 265.8,
             boilingPoint: 332,
             shells: [2, 8, 18, 7],
-            phase: Element.Phase(rawValue: "Liquid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "79.904").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "liquid").unsafelyUnwrapped,
+            category: Element.Category("diatomic nonmetal"),
             position: (17, 4)
         )
     }
@@ -646,8 +646,8 @@ extension Elements {
             meltingPoint: 115.78,
             boilingPoint: 119.93,
             shells: [2, 8, 18, 8],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "83.7982").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("noble gas"),
             position: (18, 4)
         )
     }
@@ -664,8 +664,8 @@ extension Elements {
             meltingPoint: 312.45,
             boilingPoint: 961,
             shells: [2, 8, 18, 8, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "85.46783").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkali metal"),
             position: (1, 5)
         )
     }
@@ -682,8 +682,8 @@ extension Elements {
             meltingPoint: 1050,
             boilingPoint: 1650,
             shells: [2, 8, 18, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "87.621").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkaline earth metal"),
             position: (2, 5)
         )
     }
@@ -700,8 +700,8 @@ extension Elements {
             meltingPoint: 1799,
             boilingPoint: 3203,
             shells: [2, 8, 18, 9, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "88.905842").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (3, 5)
         )
     }
@@ -718,8 +718,8 @@ extension Elements {
             meltingPoint: 2128,
             boilingPoint: 4650,
             shells: [2, 8, 18, 10, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "91.2242").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (4, 5)
         )
     }
@@ -736,8 +736,8 @@ extension Elements {
             meltingPoint: 2750,
             boilingPoint: 5017,
             shells: [2, 8, 18, 12, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "92.906372").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (5, 5)
         )
     }
@@ -754,8 +754,8 @@ extension Elements {
             meltingPoint: 2896,
             boilingPoint: 4912,
             shells: [2, 8, 18, 13, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "95.951").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (6, 5)
         )
     }
@@ -772,8 +772,8 @@ extension Elements {
             meltingPoint: 2430,
             boilingPoint: 4538,
             shells: [2, 8, 18, 13, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "98").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (7, 5)
         )
     }
@@ -790,8 +790,8 @@ extension Elements {
             meltingPoint: 2607,
             boilingPoint: 4423,
             shells: [2, 8, 18, 15, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "101.072").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (8, 5)
         )
     }
@@ -808,8 +808,8 @@ extension Elements {
             meltingPoint: 2237,
             boilingPoint: 3968,
             shells: [2, 8, 18, 16, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "102.905502").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (9, 5)
         )
     }
@@ -826,8 +826,8 @@ extension Elements {
             meltingPoint: 1828.05,
             boilingPoint: 3236,
             shells: [2, 8, 18, 18],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "106.421").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (10, 5)
         )
     }
@@ -844,8 +844,8 @@ extension Elements {
             meltingPoint: 1234.93,
             boilingPoint: 2435,
             shells: [2, 8, 18, 18, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "107.86822").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (11, 5)
         )
     }
@@ -862,8 +862,8 @@ extension Elements {
             meltingPoint: 594.22,
             boilingPoint: 1040,
             shells: [2, 8, 18, 18, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "112.4144").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (12, 5)
         )
     }
@@ -880,8 +880,8 @@ extension Elements {
             meltingPoint: 429.7485,
             boilingPoint: 2345,
             shells: [2, 8, 18, 18, 3],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "114.8181").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("post-transition metal"),
             position: (13, 5)
         )
     }
@@ -898,8 +898,8 @@ extension Elements {
             meltingPoint: 505.08,
             boilingPoint: 2875,
             shells: [2, 8, 18, 18, 4],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "118.7107").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("post-transition metal"),
             position: (14, 5)
         )
     }
@@ -916,8 +916,8 @@ extension Elements {
             meltingPoint: 903.78,
             boilingPoint: 1908,
             shells: [2, 8, 18, 18, 5],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "121.7601").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("metalloid"),
             position: (15, 5)
         )
     }
@@ -934,8 +934,8 @@ extension Elements {
             meltingPoint: 722.66,
             boilingPoint: 1261,
             shells: [2, 8, 18, 18, 6],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "127.603").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("metalloid"),
             position: (16, 5)
         )
     }
@@ -952,8 +952,8 @@ extension Elements {
             meltingPoint: 386.85,
             boilingPoint: 457.4,
             shells: [2, 8, 18, 18, 7],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "126.904473").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("diatomic nonmetal"),
             position: (17, 5)
         )
     }
@@ -970,8 +970,8 @@ extension Elements {
             meltingPoint: 161.4,
             boilingPoint: 165.051,
             shells: [2, 8, 18, 18, 8],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "131.2936").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("noble gas"),
             position: (18, 5)
         )
     }
@@ -988,8 +988,8 @@ extension Elements {
             meltingPoint: 301.7,
             boilingPoint: 944,
             shells: [2, 8, 18, 18, 8, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "132.905451966").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkali metal"),
             position: (1, 6)
         )
     }
@@ -1006,8 +1006,8 @@ extension Elements {
             meltingPoint: 1000,
             boilingPoint: 2118,
             shells: [2, 8, 18, 18, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "137.3277").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkaline earth metal"),
             position: (2, 6)
         )
     }
@@ -1024,8 +1024,8 @@ extension Elements {
             meltingPoint: 1193,
             boilingPoint: 3737,
             shells: [2, 8, 18, 18, 9, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "138.905477").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (3, 9)
         )
     }
@@ -1042,8 +1042,8 @@ extension Elements {
             meltingPoint: 1068,
             boilingPoint: 3716,
             shells: [2, 8, 18, 19, 9, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "140.1161").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (4, 9)
         )
     }
@@ -1060,8 +1060,8 @@ extension Elements {
             meltingPoint: 1208,
             boilingPoint: 3403,
             shells: [2, 8, 18, 21, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "140.907662").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (5, 9)
         )
     }
@@ -1078,8 +1078,8 @@ extension Elements {
             meltingPoint: 1297,
             boilingPoint: 3347,
             shells: [2, 8, 18, 22, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "144.2423").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (6, 9)
         )
     }
@@ -1096,8 +1096,8 @@ extension Elements {
             meltingPoint: 1315,
             boilingPoint: 3273,
             shells: [2, 8, 18, 23, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "145").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (7, 9)
         )
     }
@@ -1114,8 +1114,8 @@ extension Elements {
             meltingPoint: 1345,
             boilingPoint: 2173,
             shells: [2, 8, 18, 24, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "150.362").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (8, 9)
         )
     }
@@ -1132,8 +1132,8 @@ extension Elements {
             meltingPoint: 1099,
             boilingPoint: 1802,
             shells: [2, 8, 18, 25, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "151.9641").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (9, 9)
         )
     }
@@ -1150,8 +1150,8 @@ extension Elements {
             meltingPoint: 1585,
             boilingPoint: 3273,
             shells: [2, 8, 18, 25, 9, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "157.253").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (10, 9)
         )
     }
@@ -1168,8 +1168,8 @@ extension Elements {
             meltingPoint: 1629,
             boilingPoint: 3396,
             shells: [2, 8, 18, 27, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "158.925352").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (11, 9)
         )
     }
@@ -1186,8 +1186,8 @@ extension Elements {
             meltingPoint: 1680,
             boilingPoint: 2840,
             shells: [2, 8, 18, 28, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "162.5001").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (12, 9)
         )
     }
@@ -1204,8 +1204,8 @@ extension Elements {
             meltingPoint: 1734,
             boilingPoint: 2873,
             shells: [2, 8, 18, 29, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "164.930332").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (13, 9)
         )
     }
@@ -1222,8 +1222,8 @@ extension Elements {
             meltingPoint: 1802,
             boilingPoint: 3141,
             shells: [2, 8, 18, 30, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "167.2593").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (14, 9)
         )
     }
@@ -1240,8 +1240,8 @@ extension Elements {
             meltingPoint: 1818,
             boilingPoint: 2223,
             shells: [2, 8, 18, 31, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "168.934222").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (15, 9)
         )
     }
@@ -1258,8 +1258,8 @@ extension Elements {
             meltingPoint: 1097,
             boilingPoint: 1469,
             shells: [2, 8, 18, 32, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "173.0451").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (16, 9)
         )
     }
@@ -1276,8 +1276,8 @@ extension Elements {
             meltingPoint: 1925,
             boilingPoint: 3675,
             shells: [2, 8, 18, 32, 9, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "174.96681").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("lanthanide"),
             position: (17, 9)
         )
     }
@@ -1294,8 +1294,8 @@ extension Elements {
             meltingPoint: 2506,
             boilingPoint: 4876,
             shells: [2, 8, 18, 32, 10, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "178.492").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (4, 6)
         )
     }
@@ -1312,8 +1312,8 @@ extension Elements {
             meltingPoint: 3290,
             boilingPoint: 5731,
             shells: [2, 8, 18, 32, 11, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "180.947882").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (5, 6)
         )
     }
@@ -1330,8 +1330,8 @@ extension Elements {
             meltingPoint: 3695,
             boilingPoint: 6203,
             shells: [2, 8, 18, 32, 12, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "183.841").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (6, 6)
         )
     }
@@ -1348,8 +1348,8 @@ extension Elements {
             meltingPoint: 3459,
             boilingPoint: 5869,
             shells: [2, 8, 18, 32, 13, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "186.2071").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (7, 6)
         )
     }
@@ -1366,8 +1366,8 @@ extension Elements {
             meltingPoint: 3306,
             boilingPoint: 5285,
             shells: [2, 8, 18, 32, 14, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "190.233").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (8, 6)
         )
     }
@@ -1384,8 +1384,8 @@ extension Elements {
             meltingPoint: 2719,
             boilingPoint: 4403,
             shells: [2, 8, 18, 32, 15, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "192.2173").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (9, 6)
         )
     }
@@ -1402,8 +1402,8 @@ extension Elements {
             meltingPoint: 2041.4,
             boilingPoint: 4098,
             shells: [2, 8, 18, 32, 17, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "195.0849").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (10, 6)
         )
     }
@@ -1420,8 +1420,8 @@ extension Elements {
             meltingPoint: 1337.33,
             boilingPoint: 3243,
             shells: [2, 8, 18, 32, 18, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "196.9665695").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (11, 6)
         )
     }
@@ -1438,8 +1438,8 @@ extension Elements {
             meltingPoint: 234.321,
             boilingPoint: 629.88,
             shells: [2, 8, 18, 32, 18, 2],
-            phase: Element.Phase(rawValue: "Liquid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "200.5923").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "liquid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (12, 6)
         )
     }
@@ -1456,8 +1456,8 @@ extension Elements {
             meltingPoint: 577,
             boilingPoint: 1746,
             shells: [2, 8, 18, 32, 18, 3],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "204.38").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("post-transition metal"),
             position: (13, 6)
         )
     }
@@ -1474,8 +1474,8 @@ extension Elements {
             meltingPoint: 600.61,
             boilingPoint: 2022,
             shells: [2, 8, 18, 32, 18, 4],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "207.21").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("post-transition metal"),
             position: (14, 6)
         )
     }
@@ -1492,8 +1492,8 @@ extension Elements {
             meltingPoint: 544.7,
             boilingPoint: 1837,
             shells: [2, 8, 18, 32, 18, 5],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "208.980401").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("post-transition metal"),
             position: (15, 6)
         )
     }
@@ -1510,8 +1510,8 @@ extension Elements {
             meltingPoint: 527,
             boilingPoint: 1235,
             shells: [2, 8, 18, 32, 18, 6],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "209").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("post-transition metal"),
             position: (16, 6)
         )
     }
@@ -1528,8 +1528,8 @@ extension Elements {
             meltingPoint: 575,
             boilingPoint: 610,
             shells: [2, 8, 18, 32, 18, 7],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "210").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("metalloid"),
             position: (17, 6)
         )
     }
@@ -1546,8 +1546,8 @@ extension Elements {
             meltingPoint: 202,
             boilingPoint: 211.5,
             shells: [2, 8, 18, 32, 18, 8],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "222").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("noble gas"),
             position: (18, 6)
         )
     }
@@ -1564,8 +1564,8 @@ extension Elements {
             meltingPoint: 300,
             boilingPoint: 950,
             shells: [2, 8, 18, 32, 18, 8, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "223").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkali metal"),
             position: (1, 7)
         )
     }
@@ -1582,8 +1582,8 @@ extension Elements {
             meltingPoint: 1233,
             boilingPoint: 2010,
             shells: [2, 8, 18, 32, 18, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "226").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("alkaline earth metal"),
             position: (2, 7)
         )
     }
@@ -1600,8 +1600,8 @@ extension Elements {
             meltingPoint: 1500,
             boilingPoint: 3500,
             shells: [2, 8, 18, 32, 18, 9, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "227").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (3, 10)
         )
     }
@@ -1618,8 +1618,8 @@ extension Elements {
             meltingPoint: 2023,
             boilingPoint: 5061,
             shells: [2, 8, 18, 32, 18, 10, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "232.03774").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (4, 10)
         )
     }
@@ -1636,8 +1636,8 @@ extension Elements {
             meltingPoint: 1841,
             boilingPoint: 4300,
             shells: [2, 8, 18, 32, 20, 9, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "231.035882").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (5, 10)
         )
     }
@@ -1654,8 +1654,8 @@ extension Elements {
             meltingPoint: 1405.3,
             boilingPoint: 4404,
             shells: [2, 8, 18, 32, 21, 9, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "238.028913").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (6, 10)
         )
     }
@@ -1672,8 +1672,8 @@ extension Elements {
             meltingPoint: 912,
             boilingPoint: 4447,
             shells: [2, 8, 18, 32, 22, 9, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "237").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (7, 10)
         )
     }
@@ -1690,8 +1690,8 @@ extension Elements {
             meltingPoint: 912.5,
             boilingPoint: 3505,
             shells: [2, 8, 18, 32, 24, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "244").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (8, 10)
         )
     }
@@ -1708,8 +1708,8 @@ extension Elements {
             meltingPoint: 1449,
             boilingPoint: 2880,
             shells: [2, 8, 18, 32, 25, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "243").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (9, 10)
         )
     }
@@ -1726,8 +1726,8 @@ extension Elements {
             meltingPoint: 1613,
             boilingPoint: 3383,
             shells: [2, 8, 18, 32, 25, 9, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "247").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (10, 10)
         )
     }
@@ -1744,8 +1744,8 @@ extension Elements {
             meltingPoint: 1259,
             boilingPoint: 2900,
             shells: [2, 8, 18, 32, 27, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "247").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (11, 10)
         )
     }
@@ -1762,8 +1762,8 @@ extension Elements {
             meltingPoint: 1173,
             boilingPoint: 1743,
             shells: [2, 8, 18, 32, 28, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "251").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (12, 10)
         )
     }
@@ -1780,8 +1780,8 @@ extension Elements {
             meltingPoint: 1133,
             boilingPoint: 1269,
             shells: [2, 8, 18, 32, 29, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "252").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (13, 10)
         )
     }
@@ -1798,8 +1798,8 @@ extension Elements {
             meltingPoint: 1800,
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 30, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "257").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (14, 10)
         )
     }
@@ -1816,8 +1816,8 @@ extension Elements {
             meltingPoint: 1100,
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 31, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "258").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (15, 10)
         )
     }
@@ -1834,8 +1834,8 @@ extension Elements {
             meltingPoint: 1100,
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 8, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "259").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (16, 10)
         )
     }
@@ -1852,8 +1852,8 @@ extension Elements {
             meltingPoint: 1900,
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 8, 3],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "266").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("actinide"),
             position: (17, 10)
         )
     }
@@ -1870,8 +1870,8 @@ extension Elements {
             meltingPoint: 2400,
             boilingPoint: 5800,
             shells: [2, 8, 18, 32, 32, 10, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "267").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (4, 7)
         )
     }
@@ -1888,8 +1888,8 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 11, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "268").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (5, 7)
         )
     }
@@ -1906,8 +1906,8 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 12, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "269").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (6, 7)
         )
     }
@@ -1924,8 +1924,8 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 13, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "270").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (7, 7)
         )
     }
@@ -1942,8 +1942,8 @@ extension Elements {
             meltingPoint: 126,
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 14, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "269").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (8, 7)
         )
     }
@@ -1960,8 +1960,8 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 15, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "278").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("unknown, probably transition metal"),
             position: (9, 7)
         )
     }
@@ -1978,8 +1978,8 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 16, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "281").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("unknown, probably transition metal"),
             position: (10, 7)
         )
     }
@@ -1996,8 +1996,8 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 17, 2],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "282").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("unknown, probably transition metal"),
             position: (11, 7)
         )
     }
@@ -2014,8 +2014,8 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: 3570,
             shells: [2, 8, 18, 32, 32, 18, 2],
-            phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "285").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
+            category: Element.Category("transition metal"),
             position: (12, 7)
         )
     }
@@ -2032,8 +2032,8 @@ extension Elements {
             meltingPoint: 700,
             boilingPoint: 1430,
             shells: [2, 8, 18, 32, 32, 18, 3],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "286").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("unknown, probably transition metal"),
             position: (13, 7)
         )
     }
@@ -2050,8 +2050,8 @@ extension Elements {
             meltingPoint: 340,
             boilingPoint: 420,
             shells: [2, 8, 18, 32, 32, 18, 4],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "289").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("post-transition metal"),
             position: (14, 7)
         )
     }
@@ -2068,8 +2068,8 @@ extension Elements {
             meltingPoint: 670,
             boilingPoint: 1400,
             shells: [2, 8, 18, 32, 32, 18, 5],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "289").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("unknown, probably post-transition metal"),
             position: (15, 7)
         )
     }
@@ -2086,8 +2086,8 @@ extension Elements {
             meltingPoint: 709,
             boilingPoint: 1085,
             shells: [2, 8, 18, 32, 32, 18, 6],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "293").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("unknown, probably post-transition metal"),
             position: (16, 7)
         )
     }
@@ -2104,8 +2104,8 @@ extension Elements {
             meltingPoint: 723,
             boilingPoint: 883,
             shells: [2, 8, 18, 32, 32, 18, 7],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "294").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("unknown, probably metalloid"),
             position: (17, 7)
         )
     }
@@ -2122,8 +2122,8 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: 350,
             shells: [2, 8, 18, 32, 32, 18, 8],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "294").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("unknown, predicted to be noble gas"),
             position: (18, 7)
         )
     }
@@ -2140,9 +2140,135 @@ extension Elements {
             meltingPoint: nil,
             boilingPoint: 630,
             shells: [2, 8, 18, 32, 32, 18, 8, 1],
-            phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "315").unsafelyUnwrapped,
+            phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
+            category: Element.Category("unknown, but predicted to be an alkali metal"),
             position: (1, 8)
         )
+    }
+}
+
+extension Elements {
+    public static var allElements: [Element] {
+        return [
+            hydrogen,
+            helium,
+            lithium,
+            beryllium,
+            boron,
+            carbon,
+            nitrogen,
+            oxygen,
+            fluorine,
+            neon,
+            sodium,
+            magnesium,
+            aluminium,
+            silicon,
+            phosphorus,
+            sulfur,
+            chlorine,
+            argon,
+            potassium,
+            calcium,
+            scandium,
+            titanium,
+            vanadium,
+            chromium,
+            manganese,
+            iron,
+            cobalt,
+            nickel,
+            copper,
+            zinc,
+            gallium,
+            germanium,
+            arsenic,
+            selenium,
+            bromine,
+            krypton,
+            rubidium,
+            strontium,
+            yttrium,
+            zirconium,
+            niobium,
+            molybdenum,
+            technetium,
+            ruthenium,
+            rhodium,
+            palladium,
+            silver,
+            cadmium,
+            indium,
+            tin,
+            antimony,
+            tellurium,
+            iodine,
+            xenon,
+            cesium,
+            barium,
+            lanthanum,
+            cerium,
+            praseodymium,
+            neodymium,
+            promethium,
+            samarium,
+            europium,
+            gadolinium,
+            terbium,
+            dysprosium,
+            holmium,
+            erbium,
+            thulium,
+            ytterbium,
+            lutetium,
+            hafnium,
+            tantalum,
+            tungsten,
+            rhenium,
+            osmium,
+            iridium,
+            platinum,
+            gold,
+            mercury,
+            thallium,
+            lead,
+            bismuth,
+            polonium,
+            astatine,
+            radon,
+            francium,
+            radium,
+            actinium,
+            thorium,
+            protactinium,
+            uranium,
+            neptunium,
+            plutonium,
+            americium,
+            curium,
+            berkelium,
+            californium,
+            einsteinium,
+            fermium,
+            mendelevium,
+            nobelium,
+            lawrencium,
+            rutherfordium,
+            dubnium,
+            seaborgium,
+            bohrium,
+            hassium,
+            meitnerium,
+            darmstadtium,
+            roentgenium,
+            copernicium,
+            nihonium,
+            flerovium,
+            moscovium,
+            livermorium,
+            tennessine,
+            oganesson,
+            ununennium,
+        ]
     }
 }

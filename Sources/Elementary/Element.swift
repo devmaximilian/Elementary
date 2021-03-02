@@ -43,5 +43,19 @@ extension Element {
         case alkalineEarthMetal = "alkaline earth metal"
         case metalloid = "metalloid"
         case polyatomicNonmetal = "polyatomic nonmetal"
+        case solid = "solid"
+        case actinide = "actinide"
+        case postTransitionMetal = "post-transition metal"
+        case transitionMetal = "transition metal"
+        case lanthanide = "lanthanide"
+        case unknown
+        
+        public init(_ rawValue: String) {
+            guard let category = Category(rawValue: rawValue) else {
+                self = .unknown
+                return
+            }
+            self = category
+        }
     }
 }
