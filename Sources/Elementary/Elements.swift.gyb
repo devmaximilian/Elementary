@@ -4,6 +4,11 @@
     def lowercased(str):
         return str[0].lower() + str[1:]
     
+    def valueOrNil(val):
+        if val is None:
+            return "nil"
+        return val
+    
     elements = {}
     with open('../../PeriodicTableJSON.json') as file:
         elements = json.load(file)['elements']
@@ -12,7 +17,17 @@ extension Elements {
 % for element in elements:
     public static var ${lowercased(element['name'])}: Element {
         return Element(
-            name: "${element['name']}"
+            number: ${element['number']},
+            period: ${element['period']},
+            symbol: "${element['symbol']}",
+            name: "${element['name']}",
+            mass: ${element['atomic_mass']},
+            density: ${valueOrNil(element['density'])},
+            meltingPoint: ${valueOrNil(element['melt'])},
+            boilingPoint: ${valueOrNil(element['boil'])},
+            shells: ${element['shells']},
+            phase: Element.Phase(rawValue: "${element['phase']}").unsafelyUnwrapped,
+            category: Element.Category(rawValue: "${element['atomic_mass']}").unsafelyUnwrapped
         )
     }
 % end
