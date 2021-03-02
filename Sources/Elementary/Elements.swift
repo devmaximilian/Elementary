@@ -1,7 +1,7 @@
 extension Elements {
     /// - Returns: A custom element using the provided data.
-    public static func custom(number: Int, period: Int, symbol: String, name: String, mass: Double, density: Double?, meltingPoint: Double?, boilingPoint: Double?, shells: [Int], phase: Element.Phase, category: Element.Category) -> Element {
-        return Element(number: number, period: period, symbol: symbol, name: name, mass: mass, density: density, meltingPoint: meltingPoint, boilingPoint: boilingPoint, shells: shells, phase: phase, category: category)
+    public static func custom(number: Int, period: Int, symbol: String, name: String, mass: Double, density: Double?, meltingPoint: Double?, boilingPoint: Double?, shells: [Int], phase: Element.Phase, category: Element.Category, position: (x: Int, y: Int)) -> Element {
+        return Element(number: number, period: period, symbol: symbol, name: name, mass: mass, density: density, meltingPoint: meltingPoint, boilingPoint: boilingPoint, shells: shells, phase: phase, category: category, position: position)
     }
     
     /// Hydrogen
@@ -17,7 +17,8 @@ extension Elements {
             boilingPoint: 20.271,
             shells: [1],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "1.008").unsafelyUnwrapped
+            category: Element.Category(rawValue: "1.008").unsafelyUnwrapped,
+            position: (1, 1)
         )
     }
     
@@ -34,7 +35,8 @@ extension Elements {
             boilingPoint: 4.222,
             shells: [2],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "4.0026022").unsafelyUnwrapped
+            category: Element.Category(rawValue: "4.0026022").unsafelyUnwrapped,
+            position: (18, 1)
         )
     }
     
@@ -51,7 +53,8 @@ extension Elements {
             boilingPoint: 1603,
             shells: [2, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "6.94").unsafelyUnwrapped
+            category: Element.Category(rawValue: "6.94").unsafelyUnwrapped,
+            position: (1, 2)
         )
     }
     
@@ -68,7 +71,8 @@ extension Elements {
             boilingPoint: 2742,
             shells: [2, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "9.01218315").unsafelyUnwrapped
+            category: Element.Category(rawValue: "9.01218315").unsafelyUnwrapped,
+            position: (2, 2)
         )
     }
     
@@ -85,7 +89,8 @@ extension Elements {
             boilingPoint: 4200,
             shells: [2, 3],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "10.81").unsafelyUnwrapped
+            category: Element.Category(rawValue: "10.81").unsafelyUnwrapped,
+            position: (13, 2)
         )
     }
     
@@ -102,7 +107,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 4],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "12.011").unsafelyUnwrapped
+            category: Element.Category(rawValue: "12.011").unsafelyUnwrapped,
+            position: (14, 2)
         )
     }
     
@@ -119,7 +125,8 @@ extension Elements {
             boilingPoint: 77.355,
             shells: [2, 5],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "14.007").unsafelyUnwrapped
+            category: Element.Category(rawValue: "14.007").unsafelyUnwrapped,
+            position: (15, 2)
         )
     }
     
@@ -136,7 +143,8 @@ extension Elements {
             boilingPoint: 90.188,
             shells: [2, 6],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "15.999").unsafelyUnwrapped
+            category: Element.Category(rawValue: "15.999").unsafelyUnwrapped,
+            position: (16, 2)
         )
     }
     
@@ -153,7 +161,8 @@ extension Elements {
             boilingPoint: 85.03,
             shells: [2, 7],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "18.9984031636").unsafelyUnwrapped
+            category: Element.Category(rawValue: "18.9984031636").unsafelyUnwrapped,
+            position: (17, 2)
         )
     }
     
@@ -170,7 +179,8 @@ extension Elements {
             boilingPoint: 27.104,
             shells: [2, 8],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "20.17976").unsafelyUnwrapped
+            category: Element.Category(rawValue: "20.17976").unsafelyUnwrapped,
+            position: (18, 2)
         )
     }
     
@@ -187,7 +197,8 @@ extension Elements {
             boilingPoint: 1156.09,
             shells: [2, 8, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "22.989769282").unsafelyUnwrapped
+            category: Element.Category(rawValue: "22.989769282").unsafelyUnwrapped,
+            position: (1, 3)
         )
     }
     
@@ -204,7 +215,8 @@ extension Elements {
             boilingPoint: 1363,
             shells: [2, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "24.305").unsafelyUnwrapped
+            category: Element.Category(rawValue: "24.305").unsafelyUnwrapped,
+            position: (2, 3)
         )
     }
     
@@ -221,7 +233,8 @@ extension Elements {
             boilingPoint: 2743,
             shells: [2, 8, 3],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "26.98153857").unsafelyUnwrapped
+            category: Element.Category(rawValue: "26.98153857").unsafelyUnwrapped,
+            position: (13, 3)
         )
     }
     
@@ -238,7 +251,8 @@ extension Elements {
             boilingPoint: 3538,
             shells: [2, 8, 4],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "28.085").unsafelyUnwrapped
+            category: Element.Category(rawValue: "28.085").unsafelyUnwrapped,
+            position: (14, 3)
         )
     }
     
@@ -255,7 +269,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 5],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "30.9737619985").unsafelyUnwrapped
+            category: Element.Category(rawValue: "30.9737619985").unsafelyUnwrapped,
+            position: (15, 3)
         )
     }
     
@@ -272,7 +287,8 @@ extension Elements {
             boilingPoint: 717.8,
             shells: [2, 8, 6],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "32.06").unsafelyUnwrapped
+            category: Element.Category(rawValue: "32.06").unsafelyUnwrapped,
+            position: (16, 3)
         )
     }
     
@@ -289,7 +305,8 @@ extension Elements {
             boilingPoint: 239.11,
             shells: [2, 8, 7],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "35.45").unsafelyUnwrapped
+            category: Element.Category(rawValue: "35.45").unsafelyUnwrapped,
+            position: (17, 3)
         )
     }
     
@@ -306,7 +323,8 @@ extension Elements {
             boilingPoint: 87.302,
             shells: [2, 8, 8],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "39.9481").unsafelyUnwrapped
+            category: Element.Category(rawValue: "39.9481").unsafelyUnwrapped,
+            position: (18, 3)
         )
     }
     
@@ -323,7 +341,8 @@ extension Elements {
             boilingPoint: 1032,
             shells: [2, 8, 8, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "39.09831").unsafelyUnwrapped
+            category: Element.Category(rawValue: "39.09831").unsafelyUnwrapped,
+            position: (1, 4)
         )
     }
     
@@ -340,7 +359,8 @@ extension Elements {
             boilingPoint: 1757,
             shells: [2, 8, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "40.0784").unsafelyUnwrapped
+            category: Element.Category(rawValue: "40.0784").unsafelyUnwrapped,
+            position: (2, 4)
         )
     }
     
@@ -357,7 +377,8 @@ extension Elements {
             boilingPoint: 3109,
             shells: [2, 8, 9, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "44.9559085").unsafelyUnwrapped
+            category: Element.Category(rawValue: "44.9559085").unsafelyUnwrapped,
+            position: (3, 4)
         )
     }
     
@@ -374,7 +395,8 @@ extension Elements {
             boilingPoint: 3560,
             shells: [2, 8, 10, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "47.8671").unsafelyUnwrapped
+            category: Element.Category(rawValue: "47.8671").unsafelyUnwrapped,
+            position: (4, 4)
         )
     }
     
@@ -391,7 +413,8 @@ extension Elements {
             boilingPoint: 3680,
             shells: [2, 8, 11, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "50.94151").unsafelyUnwrapped
+            category: Element.Category(rawValue: "50.94151").unsafelyUnwrapped,
+            position: (5, 4)
         )
     }
     
@@ -408,7 +431,8 @@ extension Elements {
             boilingPoint: 2944,
             shells: [2, 8, 13, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "51.99616").unsafelyUnwrapped
+            category: Element.Category(rawValue: "51.99616").unsafelyUnwrapped,
+            position: (6, 4)
         )
     }
     
@@ -425,7 +449,8 @@ extension Elements {
             boilingPoint: 2334,
             shells: [2, 8, 13, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "54.9380443").unsafelyUnwrapped
+            category: Element.Category(rawValue: "54.9380443").unsafelyUnwrapped,
+            position: (7, 4)
         )
     }
     
@@ -442,7 +467,8 @@ extension Elements {
             boilingPoint: 3134,
             shells: [2, 8, 14, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "55.8452").unsafelyUnwrapped
+            category: Element.Category(rawValue: "55.8452").unsafelyUnwrapped,
+            position: (8, 4)
         )
     }
     
@@ -459,7 +485,8 @@ extension Elements {
             boilingPoint: 3200,
             shells: [2, 8, 15, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "58.9331944").unsafelyUnwrapped
+            category: Element.Category(rawValue: "58.9331944").unsafelyUnwrapped,
+            position: (9, 4)
         )
     }
     
@@ -476,7 +503,8 @@ extension Elements {
             boilingPoint: 3003,
             shells: [2, 8, 16, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "58.69344").unsafelyUnwrapped
+            category: Element.Category(rawValue: "58.69344").unsafelyUnwrapped,
+            position: (10, 4)
         )
     }
     
@@ -493,7 +521,8 @@ extension Elements {
             boilingPoint: 2835,
             shells: [2, 8, 18, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "63.5463").unsafelyUnwrapped
+            category: Element.Category(rawValue: "63.5463").unsafelyUnwrapped,
+            position: (11, 4)
         )
     }
     
@@ -510,7 +539,8 @@ extension Elements {
             boilingPoint: 1180,
             shells: [2, 8, 18, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "65.382").unsafelyUnwrapped
+            category: Element.Category(rawValue: "65.382").unsafelyUnwrapped,
+            position: (12, 4)
         )
     }
     
@@ -527,7 +557,8 @@ extension Elements {
             boilingPoint: 2673,
             shells: [2, 8, 18, 3],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "69.7231").unsafelyUnwrapped
+            category: Element.Category(rawValue: "69.7231").unsafelyUnwrapped,
+            position: (13, 4)
         )
     }
     
@@ -544,7 +575,8 @@ extension Elements {
             boilingPoint: 3106,
             shells: [2, 8, 18, 4],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "72.6308").unsafelyUnwrapped
+            category: Element.Category(rawValue: "72.6308").unsafelyUnwrapped,
+            position: (14, 4)
         )
     }
     
@@ -561,7 +593,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 5],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "74.9215956").unsafelyUnwrapped
+            category: Element.Category(rawValue: "74.9215956").unsafelyUnwrapped,
+            position: (15, 4)
         )
     }
     
@@ -578,7 +611,8 @@ extension Elements {
             boilingPoint: 958,
             shells: [2, 8, 18, 6],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "78.9718").unsafelyUnwrapped
+            category: Element.Category(rawValue: "78.9718").unsafelyUnwrapped,
+            position: (16, 4)
         )
     }
     
@@ -595,7 +629,8 @@ extension Elements {
             boilingPoint: 332,
             shells: [2, 8, 18, 7],
             phase: Element.Phase(rawValue: "Liquid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "79.904").unsafelyUnwrapped
+            category: Element.Category(rawValue: "79.904").unsafelyUnwrapped,
+            position: (17, 4)
         )
     }
     
@@ -612,7 +647,8 @@ extension Elements {
             boilingPoint: 119.93,
             shells: [2, 8, 18, 8],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "83.7982").unsafelyUnwrapped
+            category: Element.Category(rawValue: "83.7982").unsafelyUnwrapped,
+            position: (18, 4)
         )
     }
     
@@ -629,7 +665,8 @@ extension Elements {
             boilingPoint: 961,
             shells: [2, 8, 18, 8, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "85.46783").unsafelyUnwrapped
+            category: Element.Category(rawValue: "85.46783").unsafelyUnwrapped,
+            position: (1, 5)
         )
     }
     
@@ -646,7 +683,8 @@ extension Elements {
             boilingPoint: 1650,
             shells: [2, 8, 18, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "87.621").unsafelyUnwrapped
+            category: Element.Category(rawValue: "87.621").unsafelyUnwrapped,
+            position: (2, 5)
         )
     }
     
@@ -663,7 +701,8 @@ extension Elements {
             boilingPoint: 3203,
             shells: [2, 8, 18, 9, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "88.905842").unsafelyUnwrapped
+            category: Element.Category(rawValue: "88.905842").unsafelyUnwrapped,
+            position: (3, 5)
         )
     }
     
@@ -680,7 +719,8 @@ extension Elements {
             boilingPoint: 4650,
             shells: [2, 8, 18, 10, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "91.2242").unsafelyUnwrapped
+            category: Element.Category(rawValue: "91.2242").unsafelyUnwrapped,
+            position: (4, 5)
         )
     }
     
@@ -697,7 +737,8 @@ extension Elements {
             boilingPoint: 5017,
             shells: [2, 8, 18, 12, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "92.906372").unsafelyUnwrapped
+            category: Element.Category(rawValue: "92.906372").unsafelyUnwrapped,
+            position: (5, 5)
         )
     }
     
@@ -714,7 +755,8 @@ extension Elements {
             boilingPoint: 4912,
             shells: [2, 8, 18, 13, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "95.951").unsafelyUnwrapped
+            category: Element.Category(rawValue: "95.951").unsafelyUnwrapped,
+            position: (6, 5)
         )
     }
     
@@ -731,7 +773,8 @@ extension Elements {
             boilingPoint: 4538,
             shells: [2, 8, 18, 13, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "98").unsafelyUnwrapped
+            category: Element.Category(rawValue: "98").unsafelyUnwrapped,
+            position: (7, 5)
         )
     }
     
@@ -748,7 +791,8 @@ extension Elements {
             boilingPoint: 4423,
             shells: [2, 8, 18, 15, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "101.072").unsafelyUnwrapped
+            category: Element.Category(rawValue: "101.072").unsafelyUnwrapped,
+            position: (8, 5)
         )
     }
     
@@ -765,7 +809,8 @@ extension Elements {
             boilingPoint: 3968,
             shells: [2, 8, 18, 16, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "102.905502").unsafelyUnwrapped
+            category: Element.Category(rawValue: "102.905502").unsafelyUnwrapped,
+            position: (9, 5)
         )
     }
     
@@ -782,7 +827,8 @@ extension Elements {
             boilingPoint: 3236,
             shells: [2, 8, 18, 18],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "106.421").unsafelyUnwrapped
+            category: Element.Category(rawValue: "106.421").unsafelyUnwrapped,
+            position: (10, 5)
         )
     }
     
@@ -799,7 +845,8 @@ extension Elements {
             boilingPoint: 2435,
             shells: [2, 8, 18, 18, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "107.86822").unsafelyUnwrapped
+            category: Element.Category(rawValue: "107.86822").unsafelyUnwrapped,
+            position: (11, 5)
         )
     }
     
@@ -816,7 +863,8 @@ extension Elements {
             boilingPoint: 1040,
             shells: [2, 8, 18, 18, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "112.4144").unsafelyUnwrapped
+            category: Element.Category(rawValue: "112.4144").unsafelyUnwrapped,
+            position: (12, 5)
         )
     }
     
@@ -833,7 +881,8 @@ extension Elements {
             boilingPoint: 2345,
             shells: [2, 8, 18, 18, 3],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "114.8181").unsafelyUnwrapped
+            category: Element.Category(rawValue: "114.8181").unsafelyUnwrapped,
+            position: (13, 5)
         )
     }
     
@@ -850,7 +899,8 @@ extension Elements {
             boilingPoint: 2875,
             shells: [2, 8, 18, 18, 4],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "118.7107").unsafelyUnwrapped
+            category: Element.Category(rawValue: "118.7107").unsafelyUnwrapped,
+            position: (14, 5)
         )
     }
     
@@ -867,7 +917,8 @@ extension Elements {
             boilingPoint: 1908,
             shells: [2, 8, 18, 18, 5],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "121.7601").unsafelyUnwrapped
+            category: Element.Category(rawValue: "121.7601").unsafelyUnwrapped,
+            position: (15, 5)
         )
     }
     
@@ -884,7 +935,8 @@ extension Elements {
             boilingPoint: 1261,
             shells: [2, 8, 18, 18, 6],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "127.603").unsafelyUnwrapped
+            category: Element.Category(rawValue: "127.603").unsafelyUnwrapped,
+            position: (16, 5)
         )
     }
     
@@ -901,7 +953,8 @@ extension Elements {
             boilingPoint: 457.4,
             shells: [2, 8, 18, 18, 7],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "126.904473").unsafelyUnwrapped
+            category: Element.Category(rawValue: "126.904473").unsafelyUnwrapped,
+            position: (17, 5)
         )
     }
     
@@ -918,7 +971,8 @@ extension Elements {
             boilingPoint: 165.051,
             shells: [2, 8, 18, 18, 8],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "131.2936").unsafelyUnwrapped
+            category: Element.Category(rawValue: "131.2936").unsafelyUnwrapped,
+            position: (18, 5)
         )
     }
     
@@ -935,7 +989,8 @@ extension Elements {
             boilingPoint: 944,
             shells: [2, 8, 18, 18, 8, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "132.905451966").unsafelyUnwrapped
+            category: Element.Category(rawValue: "132.905451966").unsafelyUnwrapped,
+            position: (1, 6)
         )
     }
     
@@ -952,7 +1007,8 @@ extension Elements {
             boilingPoint: 2118,
             shells: [2, 8, 18, 18, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "137.3277").unsafelyUnwrapped
+            category: Element.Category(rawValue: "137.3277").unsafelyUnwrapped,
+            position: (2, 6)
         )
     }
     
@@ -969,7 +1025,8 @@ extension Elements {
             boilingPoint: 3737,
             shells: [2, 8, 18, 18, 9, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "138.905477").unsafelyUnwrapped
+            category: Element.Category(rawValue: "138.905477").unsafelyUnwrapped,
+            position: (3, 9)
         )
     }
     
@@ -986,7 +1043,8 @@ extension Elements {
             boilingPoint: 3716,
             shells: [2, 8, 18, 19, 9, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "140.1161").unsafelyUnwrapped
+            category: Element.Category(rawValue: "140.1161").unsafelyUnwrapped,
+            position: (4, 9)
         )
     }
     
@@ -1003,7 +1061,8 @@ extension Elements {
             boilingPoint: 3403,
             shells: [2, 8, 18, 21, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "140.907662").unsafelyUnwrapped
+            category: Element.Category(rawValue: "140.907662").unsafelyUnwrapped,
+            position: (5, 9)
         )
     }
     
@@ -1020,7 +1079,8 @@ extension Elements {
             boilingPoint: 3347,
             shells: [2, 8, 18, 22, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "144.2423").unsafelyUnwrapped
+            category: Element.Category(rawValue: "144.2423").unsafelyUnwrapped,
+            position: (6, 9)
         )
     }
     
@@ -1037,7 +1097,8 @@ extension Elements {
             boilingPoint: 3273,
             shells: [2, 8, 18, 23, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "145").unsafelyUnwrapped
+            category: Element.Category(rawValue: "145").unsafelyUnwrapped,
+            position: (7, 9)
         )
     }
     
@@ -1054,7 +1115,8 @@ extension Elements {
             boilingPoint: 2173,
             shells: [2, 8, 18, 24, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "150.362").unsafelyUnwrapped
+            category: Element.Category(rawValue: "150.362").unsafelyUnwrapped,
+            position: (8, 9)
         )
     }
     
@@ -1071,7 +1133,8 @@ extension Elements {
             boilingPoint: 1802,
             shells: [2, 8, 18, 25, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "151.9641").unsafelyUnwrapped
+            category: Element.Category(rawValue: "151.9641").unsafelyUnwrapped,
+            position: (9, 9)
         )
     }
     
@@ -1088,7 +1151,8 @@ extension Elements {
             boilingPoint: 3273,
             shells: [2, 8, 18, 25, 9, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "157.253").unsafelyUnwrapped
+            category: Element.Category(rawValue: "157.253").unsafelyUnwrapped,
+            position: (10, 9)
         )
     }
     
@@ -1105,7 +1169,8 @@ extension Elements {
             boilingPoint: 3396,
             shells: [2, 8, 18, 27, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "158.925352").unsafelyUnwrapped
+            category: Element.Category(rawValue: "158.925352").unsafelyUnwrapped,
+            position: (11, 9)
         )
     }
     
@@ -1122,7 +1187,8 @@ extension Elements {
             boilingPoint: 2840,
             shells: [2, 8, 18, 28, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "162.5001").unsafelyUnwrapped
+            category: Element.Category(rawValue: "162.5001").unsafelyUnwrapped,
+            position: (12, 9)
         )
     }
     
@@ -1139,7 +1205,8 @@ extension Elements {
             boilingPoint: 2873,
             shells: [2, 8, 18, 29, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "164.930332").unsafelyUnwrapped
+            category: Element.Category(rawValue: "164.930332").unsafelyUnwrapped,
+            position: (13, 9)
         )
     }
     
@@ -1156,7 +1223,8 @@ extension Elements {
             boilingPoint: 3141,
             shells: [2, 8, 18, 30, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "167.2593").unsafelyUnwrapped
+            category: Element.Category(rawValue: "167.2593").unsafelyUnwrapped,
+            position: (14, 9)
         )
     }
     
@@ -1173,7 +1241,8 @@ extension Elements {
             boilingPoint: 2223,
             shells: [2, 8, 18, 31, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "168.934222").unsafelyUnwrapped
+            category: Element.Category(rawValue: "168.934222").unsafelyUnwrapped,
+            position: (15, 9)
         )
     }
     
@@ -1190,7 +1259,8 @@ extension Elements {
             boilingPoint: 1469,
             shells: [2, 8, 18, 32, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "173.0451").unsafelyUnwrapped
+            category: Element.Category(rawValue: "173.0451").unsafelyUnwrapped,
+            position: (16, 9)
         )
     }
     
@@ -1207,7 +1277,8 @@ extension Elements {
             boilingPoint: 3675,
             shells: [2, 8, 18, 32, 9, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "174.96681").unsafelyUnwrapped
+            category: Element.Category(rawValue: "174.96681").unsafelyUnwrapped,
+            position: (17, 9)
         )
     }
     
@@ -1224,7 +1295,8 @@ extension Elements {
             boilingPoint: 4876,
             shells: [2, 8, 18, 32, 10, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "178.492").unsafelyUnwrapped
+            category: Element.Category(rawValue: "178.492").unsafelyUnwrapped,
+            position: (4, 6)
         )
     }
     
@@ -1241,7 +1313,8 @@ extension Elements {
             boilingPoint: 5731,
             shells: [2, 8, 18, 32, 11, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "180.947882").unsafelyUnwrapped
+            category: Element.Category(rawValue: "180.947882").unsafelyUnwrapped,
+            position: (5, 6)
         )
     }
     
@@ -1258,7 +1331,8 @@ extension Elements {
             boilingPoint: 6203,
             shells: [2, 8, 18, 32, 12, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "183.841").unsafelyUnwrapped
+            category: Element.Category(rawValue: "183.841").unsafelyUnwrapped,
+            position: (6, 6)
         )
     }
     
@@ -1275,7 +1349,8 @@ extension Elements {
             boilingPoint: 5869,
             shells: [2, 8, 18, 32, 13, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "186.2071").unsafelyUnwrapped
+            category: Element.Category(rawValue: "186.2071").unsafelyUnwrapped,
+            position: (7, 6)
         )
     }
     
@@ -1292,7 +1367,8 @@ extension Elements {
             boilingPoint: 5285,
             shells: [2, 8, 18, 32, 14, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "190.233").unsafelyUnwrapped
+            category: Element.Category(rawValue: "190.233").unsafelyUnwrapped,
+            position: (8, 6)
         )
     }
     
@@ -1309,7 +1385,8 @@ extension Elements {
             boilingPoint: 4403,
             shells: [2, 8, 18, 32, 15, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "192.2173").unsafelyUnwrapped
+            category: Element.Category(rawValue: "192.2173").unsafelyUnwrapped,
+            position: (9, 6)
         )
     }
     
@@ -1326,7 +1403,8 @@ extension Elements {
             boilingPoint: 4098,
             shells: [2, 8, 18, 32, 17, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "195.0849").unsafelyUnwrapped
+            category: Element.Category(rawValue: "195.0849").unsafelyUnwrapped,
+            position: (10, 6)
         )
     }
     
@@ -1343,7 +1421,8 @@ extension Elements {
             boilingPoint: 3243,
             shells: [2, 8, 18, 32, 18, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "196.9665695").unsafelyUnwrapped
+            category: Element.Category(rawValue: "196.9665695").unsafelyUnwrapped,
+            position: (11, 6)
         )
     }
     
@@ -1360,7 +1439,8 @@ extension Elements {
             boilingPoint: 629.88,
             shells: [2, 8, 18, 32, 18, 2],
             phase: Element.Phase(rawValue: "Liquid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "200.5923").unsafelyUnwrapped
+            category: Element.Category(rawValue: "200.5923").unsafelyUnwrapped,
+            position: (12, 6)
         )
     }
     
@@ -1377,7 +1457,8 @@ extension Elements {
             boilingPoint: 1746,
             shells: [2, 8, 18, 32, 18, 3],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "204.38").unsafelyUnwrapped
+            category: Element.Category(rawValue: "204.38").unsafelyUnwrapped,
+            position: (13, 6)
         )
     }
     
@@ -1394,7 +1475,8 @@ extension Elements {
             boilingPoint: 2022,
             shells: [2, 8, 18, 32, 18, 4],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "207.21").unsafelyUnwrapped
+            category: Element.Category(rawValue: "207.21").unsafelyUnwrapped,
+            position: (14, 6)
         )
     }
     
@@ -1411,7 +1493,8 @@ extension Elements {
             boilingPoint: 1837,
             shells: [2, 8, 18, 32, 18, 5],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "208.980401").unsafelyUnwrapped
+            category: Element.Category(rawValue: "208.980401").unsafelyUnwrapped,
+            position: (15, 6)
         )
     }
     
@@ -1428,7 +1511,8 @@ extension Elements {
             boilingPoint: 1235,
             shells: [2, 8, 18, 32, 18, 6],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "209").unsafelyUnwrapped
+            category: Element.Category(rawValue: "209").unsafelyUnwrapped,
+            position: (16, 6)
         )
     }
     
@@ -1445,7 +1529,8 @@ extension Elements {
             boilingPoint: 610,
             shells: [2, 8, 18, 32, 18, 7],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "210").unsafelyUnwrapped
+            category: Element.Category(rawValue: "210").unsafelyUnwrapped,
+            position: (17, 6)
         )
     }
     
@@ -1462,7 +1547,8 @@ extension Elements {
             boilingPoint: 211.5,
             shells: [2, 8, 18, 32, 18, 8],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "222").unsafelyUnwrapped
+            category: Element.Category(rawValue: "222").unsafelyUnwrapped,
+            position: (18, 6)
         )
     }
     
@@ -1479,7 +1565,8 @@ extension Elements {
             boilingPoint: 950,
             shells: [2, 8, 18, 32, 18, 8, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "223").unsafelyUnwrapped
+            category: Element.Category(rawValue: "223").unsafelyUnwrapped,
+            position: (1, 7)
         )
     }
     
@@ -1496,7 +1583,8 @@ extension Elements {
             boilingPoint: 2010,
             shells: [2, 8, 18, 32, 18, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "226").unsafelyUnwrapped
+            category: Element.Category(rawValue: "226").unsafelyUnwrapped,
+            position: (2, 7)
         )
     }
     
@@ -1513,7 +1601,8 @@ extension Elements {
             boilingPoint: 3500,
             shells: [2, 8, 18, 32, 18, 9, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "227").unsafelyUnwrapped
+            category: Element.Category(rawValue: "227").unsafelyUnwrapped,
+            position: (3, 10)
         )
     }
     
@@ -1530,7 +1619,8 @@ extension Elements {
             boilingPoint: 5061,
             shells: [2, 8, 18, 32, 18, 10, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "232.03774").unsafelyUnwrapped
+            category: Element.Category(rawValue: "232.03774").unsafelyUnwrapped,
+            position: (4, 10)
         )
     }
     
@@ -1547,7 +1637,8 @@ extension Elements {
             boilingPoint: 4300,
             shells: [2, 8, 18, 32, 20, 9, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "231.035882").unsafelyUnwrapped
+            category: Element.Category(rawValue: "231.035882").unsafelyUnwrapped,
+            position: (5, 10)
         )
     }
     
@@ -1564,7 +1655,8 @@ extension Elements {
             boilingPoint: 4404,
             shells: [2, 8, 18, 32, 21, 9, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "238.028913").unsafelyUnwrapped
+            category: Element.Category(rawValue: "238.028913").unsafelyUnwrapped,
+            position: (6, 10)
         )
     }
     
@@ -1581,7 +1673,8 @@ extension Elements {
             boilingPoint: 4447,
             shells: [2, 8, 18, 32, 22, 9, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "237").unsafelyUnwrapped
+            category: Element.Category(rawValue: "237").unsafelyUnwrapped,
+            position: (7, 10)
         )
     }
     
@@ -1598,7 +1691,8 @@ extension Elements {
             boilingPoint: 3505,
             shells: [2, 8, 18, 32, 24, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "244").unsafelyUnwrapped
+            category: Element.Category(rawValue: "244").unsafelyUnwrapped,
+            position: (8, 10)
         )
     }
     
@@ -1615,7 +1709,8 @@ extension Elements {
             boilingPoint: 2880,
             shells: [2, 8, 18, 32, 25, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "243").unsafelyUnwrapped
+            category: Element.Category(rawValue: "243").unsafelyUnwrapped,
+            position: (9, 10)
         )
     }
     
@@ -1632,7 +1727,8 @@ extension Elements {
             boilingPoint: 3383,
             shells: [2, 8, 18, 32, 25, 9, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "247").unsafelyUnwrapped
+            category: Element.Category(rawValue: "247").unsafelyUnwrapped,
+            position: (10, 10)
         )
     }
     
@@ -1649,7 +1745,8 @@ extension Elements {
             boilingPoint: 2900,
             shells: [2, 8, 18, 32, 27, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "247").unsafelyUnwrapped
+            category: Element.Category(rawValue: "247").unsafelyUnwrapped,
+            position: (11, 10)
         )
     }
     
@@ -1666,7 +1763,8 @@ extension Elements {
             boilingPoint: 1743,
             shells: [2, 8, 18, 32, 28, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "251").unsafelyUnwrapped
+            category: Element.Category(rawValue: "251").unsafelyUnwrapped,
+            position: (12, 10)
         )
     }
     
@@ -1683,7 +1781,8 @@ extension Elements {
             boilingPoint: 1269,
             shells: [2, 8, 18, 32, 29, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "252").unsafelyUnwrapped
+            category: Element.Category(rawValue: "252").unsafelyUnwrapped,
+            position: (13, 10)
         )
     }
     
@@ -1700,7 +1799,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 30, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "257").unsafelyUnwrapped
+            category: Element.Category(rawValue: "257").unsafelyUnwrapped,
+            position: (14, 10)
         )
     }
     
@@ -1717,7 +1817,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 31, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "258").unsafelyUnwrapped
+            category: Element.Category(rawValue: "258").unsafelyUnwrapped,
+            position: (15, 10)
         )
     }
     
@@ -1734,7 +1835,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 8, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "259").unsafelyUnwrapped
+            category: Element.Category(rawValue: "259").unsafelyUnwrapped,
+            position: (16, 10)
         )
     }
     
@@ -1751,7 +1853,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 8, 3],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "266").unsafelyUnwrapped
+            category: Element.Category(rawValue: "266").unsafelyUnwrapped,
+            position: (17, 10)
         )
     }
     
@@ -1768,7 +1871,8 @@ extension Elements {
             boilingPoint: 5800,
             shells: [2, 8, 18, 32, 32, 10, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "267").unsafelyUnwrapped
+            category: Element.Category(rawValue: "267").unsafelyUnwrapped,
+            position: (4, 7)
         )
     }
     
@@ -1785,7 +1889,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 11, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "268").unsafelyUnwrapped
+            category: Element.Category(rawValue: "268").unsafelyUnwrapped,
+            position: (5, 7)
         )
     }
     
@@ -1802,7 +1907,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 12, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "269").unsafelyUnwrapped
+            category: Element.Category(rawValue: "269").unsafelyUnwrapped,
+            position: (6, 7)
         )
     }
     
@@ -1819,7 +1925,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 13, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "270").unsafelyUnwrapped
+            category: Element.Category(rawValue: "270").unsafelyUnwrapped,
+            position: (7, 7)
         )
     }
     
@@ -1836,7 +1943,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 14, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "269").unsafelyUnwrapped
+            category: Element.Category(rawValue: "269").unsafelyUnwrapped,
+            position: (8, 7)
         )
     }
     
@@ -1853,7 +1961,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 15, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "278").unsafelyUnwrapped
+            category: Element.Category(rawValue: "278").unsafelyUnwrapped,
+            position: (9, 7)
         )
     }
     
@@ -1870,7 +1979,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 16, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "281").unsafelyUnwrapped
+            category: Element.Category(rawValue: "281").unsafelyUnwrapped,
+            position: (10, 7)
         )
     }
     
@@ -1887,7 +1997,8 @@ extension Elements {
             boilingPoint: nil,
             shells: [2, 8, 18, 32, 32, 17, 2],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "282").unsafelyUnwrapped
+            category: Element.Category(rawValue: "282").unsafelyUnwrapped,
+            position: (11, 7)
         )
     }
     
@@ -1904,7 +2015,8 @@ extension Elements {
             boilingPoint: 3570,
             shells: [2, 8, 18, 32, 32, 18, 2],
             phase: Element.Phase(rawValue: "Gas").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "285").unsafelyUnwrapped
+            category: Element.Category(rawValue: "285").unsafelyUnwrapped,
+            position: (12, 7)
         )
     }
     
@@ -1921,7 +2033,8 @@ extension Elements {
             boilingPoint: 1430,
             shells: [2, 8, 18, 32, 32, 18, 3],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "286").unsafelyUnwrapped
+            category: Element.Category(rawValue: "286").unsafelyUnwrapped,
+            position: (13, 7)
         )
     }
     
@@ -1938,7 +2051,8 @@ extension Elements {
             boilingPoint: 420,
             shells: [2, 8, 18, 32, 32, 18, 4],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "289").unsafelyUnwrapped
+            category: Element.Category(rawValue: "289").unsafelyUnwrapped,
+            position: (14, 7)
         )
     }
     
@@ -1955,7 +2069,8 @@ extension Elements {
             boilingPoint: 1400,
             shells: [2, 8, 18, 32, 32, 18, 5],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "289").unsafelyUnwrapped
+            category: Element.Category(rawValue: "289").unsafelyUnwrapped,
+            position: (15, 7)
         )
     }
     
@@ -1972,7 +2087,8 @@ extension Elements {
             boilingPoint: 1085,
             shells: [2, 8, 18, 32, 32, 18, 6],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "293").unsafelyUnwrapped
+            category: Element.Category(rawValue: "293").unsafelyUnwrapped,
+            position: (16, 7)
         )
     }
     
@@ -1989,7 +2105,8 @@ extension Elements {
             boilingPoint: 883,
             shells: [2, 8, 18, 32, 32, 18, 7],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "294").unsafelyUnwrapped
+            category: Element.Category(rawValue: "294").unsafelyUnwrapped,
+            position: (17, 7)
         )
     }
     
@@ -2006,7 +2123,8 @@ extension Elements {
             boilingPoint: 350,
             shells: [2, 8, 18, 32, 32, 18, 8],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "294").unsafelyUnwrapped
+            category: Element.Category(rawValue: "294").unsafelyUnwrapped,
+            position: (18, 7)
         )
     }
     
@@ -2023,7 +2141,8 @@ extension Elements {
             boilingPoint: 630,
             shells: [2, 8, 18, 32, 32, 18, 8, 1],
             phase: Element.Phase(rawValue: "Solid").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "315").unsafelyUnwrapped
+            category: Element.Category(rawValue: "315").unsafelyUnwrapped,
+            position: (1, 8)
         )
     }
 }

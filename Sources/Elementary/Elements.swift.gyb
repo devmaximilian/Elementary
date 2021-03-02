@@ -15,8 +15,8 @@
 }%
 extension Elements {
     /// - Returns: A custom element using the provided data.
-    public static func custom(number: Int, period: Int, symbol: String, name: String, mass: Double, density: Double?, meltingPoint: Double?, boilingPoint: Double?, shells: [Int], phase: Phase, category: Category) -> Element {
-        return Element(number: number, period: period, symbol: symbol, name: name, mass: mass, density: density, meltingPoint: meltingPoint, boilingPoint: boilingPoint, shells: shells, phase: phase, category: category)
+    public static func custom(number: Int, period: Int, symbol: String, name: String, mass: Double, density: Double?, meltingPoint: Double?, boilingPoint: Double?, shells: [Int], phase: Element.Phase, category: Element.Category, position: (x: Int, y: Int)) -> Element {
+        return Element(number: number, period: period, symbol: symbol, name: name, mass: mass, density: density, meltingPoint: meltingPoint, boilingPoint: boilingPoint, shells: shells, phase: phase, category: category, position: position)
     }
 % for element in elements:
     
@@ -33,7 +33,8 @@ extension Elements {
             boilingPoint: ${valueOrNil(element['boil'])},
             shells: ${element['shells']},
             phase: Element.Phase(rawValue: "${element['phase']}").unsafelyUnwrapped,
-            category: Element.Category(rawValue: "${element['atomic_mass']}").unsafelyUnwrapped
+            category: Element.Category(rawValue: "${element['atomic_mass']}").unsafelyUnwrapped,
+            position: (${element['xpos']}, ${element['ypos']})
         )
     }
 % end

@@ -12,6 +12,7 @@ public struct Element {
     public let shells: [Int]
     public let phase: Phase
     public let category: Category
+    public let position: (x: Int, y: Int)
 }
 
 extension Element {
