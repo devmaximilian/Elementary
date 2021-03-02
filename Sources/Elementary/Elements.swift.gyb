@@ -14,7 +14,13 @@
         elements = json.load(file)['elements']
 }%
 extension Elements {
+    /// - Returns: A custom element using the provided data.
+    public static func custom(number: Int, period: Int, symbol: String, name: String, mass: Double, density: Double?, meltingPoint: Double?, boilingPoint: Double?, shells: [Int], phase: Phase, category: Category) -> Element {
+        return Element(number: number, period: period, symbol: symbol, name: name, mass: mass, density: density, meltingPoint: meltingPoint, boilingPoint: boilingPoint, shells: shells, phase: phase, category: category)
+    }
 % for element in elements:
+    
+    /// ${element['name']}
     public static var ${lowercased(element['name'])}: Element {
         return Element(
             number: ${element['number']},

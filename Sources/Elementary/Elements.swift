@@ -1,4 +1,10 @@
 extension Elements {
+    /// - Returns: A custom element using the provided data.
+    public static func custom(number: Int, period: Int, symbol: String, name: String, mass: Double, density: Double?, meltingPoint: Double?, boilingPoint: Double?, shells: [Int], phase: Element.Phase, category: Element.Category) -> Element {
+        return Element(number: number, period: period, symbol: symbol, name: name, mass: mass, density: density, meltingPoint: meltingPoint, boilingPoint: boilingPoint, shells: shells, phase: phase, category: category)
+    }
+    
+    /// Hydrogen
     public static var hydrogen: Element {
         return Element(
             number: 1,
@@ -14,6 +20,8 @@ extension Elements {
             category: Element.Category(rawValue: "1.008").unsafelyUnwrapped
         )
     }
+    
+    /// Helium
     public static var helium: Element {
         return Element(
             number: 2,
@@ -29,6 +37,8 @@ extension Elements {
             category: Element.Category(rawValue: "4.0026022").unsafelyUnwrapped
         )
     }
+    
+    /// Lithium
     public static var lithium: Element {
         return Element(
             number: 3,
@@ -44,6 +54,8 @@ extension Elements {
             category: Element.Category(rawValue: "6.94").unsafelyUnwrapped
         )
     }
+    
+    /// Beryllium
     public static var beryllium: Element {
         return Element(
             number: 4,
@@ -59,6 +71,8 @@ extension Elements {
             category: Element.Category(rawValue: "9.01218315").unsafelyUnwrapped
         )
     }
+    
+    /// Boron
     public static var boron: Element {
         return Element(
             number: 5,
@@ -74,6 +88,8 @@ extension Elements {
             category: Element.Category(rawValue: "10.81").unsafelyUnwrapped
         )
     }
+    
+    /// Carbon
     public static var carbon: Element {
         return Element(
             number: 6,
@@ -89,6 +105,8 @@ extension Elements {
             category: Element.Category(rawValue: "12.011").unsafelyUnwrapped
         )
     }
+    
+    /// Nitrogen
     public static var nitrogen: Element {
         return Element(
             number: 7,
@@ -104,6 +122,8 @@ extension Elements {
             category: Element.Category(rawValue: "14.007").unsafelyUnwrapped
         )
     }
+    
+    /// Oxygen
     public static var oxygen: Element {
         return Element(
             number: 8,
@@ -119,6 +139,8 @@ extension Elements {
             category: Element.Category(rawValue: "15.999").unsafelyUnwrapped
         )
     }
+    
+    /// Fluorine
     public static var fluorine: Element {
         return Element(
             number: 9,
@@ -134,6 +156,8 @@ extension Elements {
             category: Element.Category(rawValue: "18.9984031636").unsafelyUnwrapped
         )
     }
+    
+    /// Neon
     public static var neon: Element {
         return Element(
             number: 10,
@@ -149,6 +173,8 @@ extension Elements {
             category: Element.Category(rawValue: "20.17976").unsafelyUnwrapped
         )
     }
+    
+    /// Sodium
     public static var sodium: Element {
         return Element(
             number: 11,
@@ -164,6 +190,8 @@ extension Elements {
             category: Element.Category(rawValue: "22.989769282").unsafelyUnwrapped
         )
     }
+    
+    /// Magnesium
     public static var magnesium: Element {
         return Element(
             number: 12,
@@ -179,6 +207,8 @@ extension Elements {
             category: Element.Category(rawValue: "24.305").unsafelyUnwrapped
         )
     }
+    
+    /// Aluminium
     public static var aluminium: Element {
         return Element(
             number: 13,
@@ -194,6 +224,8 @@ extension Elements {
             category: Element.Category(rawValue: "26.98153857").unsafelyUnwrapped
         )
     }
+    
+    /// Silicon
     public static var silicon: Element {
         return Element(
             number: 14,
@@ -209,6 +241,8 @@ extension Elements {
             category: Element.Category(rawValue: "28.085").unsafelyUnwrapped
         )
     }
+    
+    /// Phosphorus
     public static var phosphorus: Element {
         return Element(
             number: 15,
@@ -224,6 +258,8 @@ extension Elements {
             category: Element.Category(rawValue: "30.9737619985").unsafelyUnwrapped
         )
     }
+    
+    /// Sulfur
     public static var sulfur: Element {
         return Element(
             number: 16,
@@ -239,6 +275,8 @@ extension Elements {
             category: Element.Category(rawValue: "32.06").unsafelyUnwrapped
         )
     }
+    
+    /// Chlorine
     public static var chlorine: Element {
         return Element(
             number: 17,
@@ -254,6 +292,8 @@ extension Elements {
             category: Element.Category(rawValue: "35.45").unsafelyUnwrapped
         )
     }
+    
+    /// Argon
     public static var argon: Element {
         return Element(
             number: 18,
@@ -269,6 +309,8 @@ extension Elements {
             category: Element.Category(rawValue: "39.9481").unsafelyUnwrapped
         )
     }
+    
+    /// Potassium
     public static var potassium: Element {
         return Element(
             number: 19,
@@ -284,6 +326,8 @@ extension Elements {
             category: Element.Category(rawValue: "39.09831").unsafelyUnwrapped
         )
     }
+    
+    /// Calcium
     public static var calcium: Element {
         return Element(
             number: 20,
@@ -299,6 +343,8 @@ extension Elements {
             category: Element.Category(rawValue: "40.0784").unsafelyUnwrapped
         )
     }
+    
+    /// Scandium
     public static var scandium: Element {
         return Element(
             number: 21,
@@ -314,6 +360,8 @@ extension Elements {
             category: Element.Category(rawValue: "44.9559085").unsafelyUnwrapped
         )
     }
+    
+    /// Titanium
     public static var titanium: Element {
         return Element(
             number: 22,
@@ -329,6 +377,8 @@ extension Elements {
             category: Element.Category(rawValue: "47.8671").unsafelyUnwrapped
         )
     }
+    
+    /// Vanadium
     public static var vanadium: Element {
         return Element(
             number: 23,
@@ -344,6 +394,8 @@ extension Elements {
             category: Element.Category(rawValue: "50.94151").unsafelyUnwrapped
         )
     }
+    
+    /// Chromium
     public static var chromium: Element {
         return Element(
             number: 24,
@@ -359,6 +411,8 @@ extension Elements {
             category: Element.Category(rawValue: "51.99616").unsafelyUnwrapped
         )
     }
+    
+    /// Manganese
     public static var manganese: Element {
         return Element(
             number: 25,
@@ -374,6 +428,8 @@ extension Elements {
             category: Element.Category(rawValue: "54.9380443").unsafelyUnwrapped
         )
     }
+    
+    /// Iron
     public static var iron: Element {
         return Element(
             number: 26,
@@ -389,6 +445,8 @@ extension Elements {
             category: Element.Category(rawValue: "55.8452").unsafelyUnwrapped
         )
     }
+    
+    /// Cobalt
     public static var cobalt: Element {
         return Element(
             number: 27,
@@ -404,6 +462,8 @@ extension Elements {
             category: Element.Category(rawValue: "58.9331944").unsafelyUnwrapped
         )
     }
+    
+    /// Nickel
     public static var nickel: Element {
         return Element(
             number: 28,
@@ -419,6 +479,8 @@ extension Elements {
             category: Element.Category(rawValue: "58.69344").unsafelyUnwrapped
         )
     }
+    
+    /// Copper
     public static var copper: Element {
         return Element(
             number: 29,
@@ -434,6 +496,8 @@ extension Elements {
             category: Element.Category(rawValue: "63.5463").unsafelyUnwrapped
         )
     }
+    
+    /// Zinc
     public static var zinc: Element {
         return Element(
             number: 30,
@@ -449,6 +513,8 @@ extension Elements {
             category: Element.Category(rawValue: "65.382").unsafelyUnwrapped
         )
     }
+    
+    /// Gallium
     public static var gallium: Element {
         return Element(
             number: 31,
@@ -464,6 +530,8 @@ extension Elements {
             category: Element.Category(rawValue: "69.7231").unsafelyUnwrapped
         )
     }
+    
+    /// Germanium
     public static var germanium: Element {
         return Element(
             number: 32,
@@ -479,6 +547,8 @@ extension Elements {
             category: Element.Category(rawValue: "72.6308").unsafelyUnwrapped
         )
     }
+    
+    /// Arsenic
     public static var arsenic: Element {
         return Element(
             number: 33,
@@ -494,6 +564,8 @@ extension Elements {
             category: Element.Category(rawValue: "74.9215956").unsafelyUnwrapped
         )
     }
+    
+    /// Selenium
     public static var selenium: Element {
         return Element(
             number: 34,
@@ -509,6 +581,8 @@ extension Elements {
             category: Element.Category(rawValue: "78.9718").unsafelyUnwrapped
         )
     }
+    
+    /// Bromine
     public static var bromine: Element {
         return Element(
             number: 35,
@@ -524,6 +598,8 @@ extension Elements {
             category: Element.Category(rawValue: "79.904").unsafelyUnwrapped
         )
     }
+    
+    /// Krypton
     public static var krypton: Element {
         return Element(
             number: 36,
@@ -539,6 +615,8 @@ extension Elements {
             category: Element.Category(rawValue: "83.7982").unsafelyUnwrapped
         )
     }
+    
+    /// Rubidium
     public static var rubidium: Element {
         return Element(
             number: 37,
@@ -554,6 +632,8 @@ extension Elements {
             category: Element.Category(rawValue: "85.46783").unsafelyUnwrapped
         )
     }
+    
+    /// Strontium
     public static var strontium: Element {
         return Element(
             number: 38,
@@ -569,6 +649,8 @@ extension Elements {
             category: Element.Category(rawValue: "87.621").unsafelyUnwrapped
         )
     }
+    
+    /// Yttrium
     public static var yttrium: Element {
         return Element(
             number: 39,
@@ -584,6 +666,8 @@ extension Elements {
             category: Element.Category(rawValue: "88.905842").unsafelyUnwrapped
         )
     }
+    
+    /// Zirconium
     public static var zirconium: Element {
         return Element(
             number: 40,
@@ -599,6 +683,8 @@ extension Elements {
             category: Element.Category(rawValue: "91.2242").unsafelyUnwrapped
         )
     }
+    
+    /// Niobium
     public static var niobium: Element {
         return Element(
             number: 41,
@@ -614,6 +700,8 @@ extension Elements {
             category: Element.Category(rawValue: "92.906372").unsafelyUnwrapped
         )
     }
+    
+    /// Molybdenum
     public static var molybdenum: Element {
         return Element(
             number: 42,
@@ -629,6 +717,8 @@ extension Elements {
             category: Element.Category(rawValue: "95.951").unsafelyUnwrapped
         )
     }
+    
+    /// Technetium
     public static var technetium: Element {
         return Element(
             number: 43,
@@ -644,6 +734,8 @@ extension Elements {
             category: Element.Category(rawValue: "98").unsafelyUnwrapped
         )
     }
+    
+    /// Ruthenium
     public static var ruthenium: Element {
         return Element(
             number: 44,
@@ -659,6 +751,8 @@ extension Elements {
             category: Element.Category(rawValue: "101.072").unsafelyUnwrapped
         )
     }
+    
+    /// Rhodium
     public static var rhodium: Element {
         return Element(
             number: 45,
@@ -674,6 +768,8 @@ extension Elements {
             category: Element.Category(rawValue: "102.905502").unsafelyUnwrapped
         )
     }
+    
+    /// Palladium
     public static var palladium: Element {
         return Element(
             number: 46,
@@ -689,6 +785,8 @@ extension Elements {
             category: Element.Category(rawValue: "106.421").unsafelyUnwrapped
         )
     }
+    
+    /// Silver
     public static var silver: Element {
         return Element(
             number: 47,
@@ -704,6 +802,8 @@ extension Elements {
             category: Element.Category(rawValue: "107.86822").unsafelyUnwrapped
         )
     }
+    
+    /// Cadmium
     public static var cadmium: Element {
         return Element(
             number: 48,
@@ -719,6 +819,8 @@ extension Elements {
             category: Element.Category(rawValue: "112.4144").unsafelyUnwrapped
         )
     }
+    
+    /// Indium
     public static var indium: Element {
         return Element(
             number: 49,
@@ -734,6 +836,8 @@ extension Elements {
             category: Element.Category(rawValue: "114.8181").unsafelyUnwrapped
         )
     }
+    
+    /// Tin
     public static var tin: Element {
         return Element(
             number: 50,
@@ -749,6 +853,8 @@ extension Elements {
             category: Element.Category(rawValue: "118.7107").unsafelyUnwrapped
         )
     }
+    
+    /// Antimony
     public static var antimony: Element {
         return Element(
             number: 51,
@@ -764,6 +870,8 @@ extension Elements {
             category: Element.Category(rawValue: "121.7601").unsafelyUnwrapped
         )
     }
+    
+    /// Tellurium
     public static var tellurium: Element {
         return Element(
             number: 52,
@@ -779,6 +887,8 @@ extension Elements {
             category: Element.Category(rawValue: "127.603").unsafelyUnwrapped
         )
     }
+    
+    /// Iodine
     public static var iodine: Element {
         return Element(
             number: 53,
@@ -794,6 +904,8 @@ extension Elements {
             category: Element.Category(rawValue: "126.904473").unsafelyUnwrapped
         )
     }
+    
+    /// Xenon
     public static var xenon: Element {
         return Element(
             number: 54,
@@ -809,6 +921,8 @@ extension Elements {
             category: Element.Category(rawValue: "131.2936").unsafelyUnwrapped
         )
     }
+    
+    /// Cesium
     public static var cesium: Element {
         return Element(
             number: 55,
@@ -824,6 +938,8 @@ extension Elements {
             category: Element.Category(rawValue: "132.905451966").unsafelyUnwrapped
         )
     }
+    
+    /// Barium
     public static var barium: Element {
         return Element(
             number: 56,
@@ -839,6 +955,8 @@ extension Elements {
             category: Element.Category(rawValue: "137.3277").unsafelyUnwrapped
         )
     }
+    
+    /// Lanthanum
     public static var lanthanum: Element {
         return Element(
             number: 57,
@@ -854,6 +972,8 @@ extension Elements {
             category: Element.Category(rawValue: "138.905477").unsafelyUnwrapped
         )
     }
+    
+    /// Cerium
     public static var cerium: Element {
         return Element(
             number: 58,
@@ -869,6 +989,8 @@ extension Elements {
             category: Element.Category(rawValue: "140.1161").unsafelyUnwrapped
         )
     }
+    
+    /// Praseodymium
     public static var praseodymium: Element {
         return Element(
             number: 59,
@@ -884,6 +1006,8 @@ extension Elements {
             category: Element.Category(rawValue: "140.907662").unsafelyUnwrapped
         )
     }
+    
+    /// Neodymium
     public static var neodymium: Element {
         return Element(
             number: 60,
@@ -899,6 +1023,8 @@ extension Elements {
             category: Element.Category(rawValue: "144.2423").unsafelyUnwrapped
         )
     }
+    
+    /// Promethium
     public static var promethium: Element {
         return Element(
             number: 61,
@@ -914,6 +1040,8 @@ extension Elements {
             category: Element.Category(rawValue: "145").unsafelyUnwrapped
         )
     }
+    
+    /// Samarium
     public static var samarium: Element {
         return Element(
             number: 62,
@@ -929,6 +1057,8 @@ extension Elements {
             category: Element.Category(rawValue: "150.362").unsafelyUnwrapped
         )
     }
+    
+    /// Europium
     public static var europium: Element {
         return Element(
             number: 63,
@@ -944,6 +1074,8 @@ extension Elements {
             category: Element.Category(rawValue: "151.9641").unsafelyUnwrapped
         )
     }
+    
+    /// Gadolinium
     public static var gadolinium: Element {
         return Element(
             number: 64,
@@ -959,6 +1091,8 @@ extension Elements {
             category: Element.Category(rawValue: "157.253").unsafelyUnwrapped
         )
     }
+    
+    /// Terbium
     public static var terbium: Element {
         return Element(
             number: 65,
@@ -974,6 +1108,8 @@ extension Elements {
             category: Element.Category(rawValue: "158.925352").unsafelyUnwrapped
         )
     }
+    
+    /// Dysprosium
     public static var dysprosium: Element {
         return Element(
             number: 66,
@@ -989,6 +1125,8 @@ extension Elements {
             category: Element.Category(rawValue: "162.5001").unsafelyUnwrapped
         )
     }
+    
+    /// Holmium
     public static var holmium: Element {
         return Element(
             number: 67,
@@ -1004,6 +1142,8 @@ extension Elements {
             category: Element.Category(rawValue: "164.930332").unsafelyUnwrapped
         )
     }
+    
+    /// Erbium
     public static var erbium: Element {
         return Element(
             number: 68,
@@ -1019,6 +1159,8 @@ extension Elements {
             category: Element.Category(rawValue: "167.2593").unsafelyUnwrapped
         )
     }
+    
+    /// Thulium
     public static var thulium: Element {
         return Element(
             number: 69,
@@ -1034,6 +1176,8 @@ extension Elements {
             category: Element.Category(rawValue: "168.934222").unsafelyUnwrapped
         )
     }
+    
+    /// Ytterbium
     public static var ytterbium: Element {
         return Element(
             number: 70,
@@ -1049,6 +1193,8 @@ extension Elements {
             category: Element.Category(rawValue: "173.0451").unsafelyUnwrapped
         )
     }
+    
+    /// Lutetium
     public static var lutetium: Element {
         return Element(
             number: 71,
@@ -1064,6 +1210,8 @@ extension Elements {
             category: Element.Category(rawValue: "174.96681").unsafelyUnwrapped
         )
     }
+    
+    /// Hafnium
     public static var hafnium: Element {
         return Element(
             number: 72,
@@ -1079,6 +1227,8 @@ extension Elements {
             category: Element.Category(rawValue: "178.492").unsafelyUnwrapped
         )
     }
+    
+    /// Tantalum
     public static var tantalum: Element {
         return Element(
             number: 73,
@@ -1094,6 +1244,8 @@ extension Elements {
             category: Element.Category(rawValue: "180.947882").unsafelyUnwrapped
         )
     }
+    
+    /// Tungsten
     public static var tungsten: Element {
         return Element(
             number: 74,
@@ -1109,6 +1261,8 @@ extension Elements {
             category: Element.Category(rawValue: "183.841").unsafelyUnwrapped
         )
     }
+    
+    /// Rhenium
     public static var rhenium: Element {
         return Element(
             number: 75,
@@ -1124,6 +1278,8 @@ extension Elements {
             category: Element.Category(rawValue: "186.2071").unsafelyUnwrapped
         )
     }
+    
+    /// Osmium
     public static var osmium: Element {
         return Element(
             number: 76,
@@ -1139,6 +1295,8 @@ extension Elements {
             category: Element.Category(rawValue: "190.233").unsafelyUnwrapped
         )
     }
+    
+    /// Iridium
     public static var iridium: Element {
         return Element(
             number: 77,
@@ -1154,6 +1312,8 @@ extension Elements {
             category: Element.Category(rawValue: "192.2173").unsafelyUnwrapped
         )
     }
+    
+    /// Platinum
     public static var platinum: Element {
         return Element(
             number: 78,
@@ -1169,6 +1329,8 @@ extension Elements {
             category: Element.Category(rawValue: "195.0849").unsafelyUnwrapped
         )
     }
+    
+    /// Gold
     public static var gold: Element {
         return Element(
             number: 79,
@@ -1184,6 +1346,8 @@ extension Elements {
             category: Element.Category(rawValue: "196.9665695").unsafelyUnwrapped
         )
     }
+    
+    /// Mercury
     public static var mercury: Element {
         return Element(
             number: 80,
@@ -1199,6 +1363,8 @@ extension Elements {
             category: Element.Category(rawValue: "200.5923").unsafelyUnwrapped
         )
     }
+    
+    /// Thallium
     public static var thallium: Element {
         return Element(
             number: 81,
@@ -1214,6 +1380,8 @@ extension Elements {
             category: Element.Category(rawValue: "204.38").unsafelyUnwrapped
         )
     }
+    
+    /// Lead
     public static var lead: Element {
         return Element(
             number: 82,
@@ -1229,6 +1397,8 @@ extension Elements {
             category: Element.Category(rawValue: "207.21").unsafelyUnwrapped
         )
     }
+    
+    /// Bismuth
     public static var bismuth: Element {
         return Element(
             number: 83,
@@ -1244,6 +1414,8 @@ extension Elements {
             category: Element.Category(rawValue: "208.980401").unsafelyUnwrapped
         )
     }
+    
+    /// Polonium
     public static var polonium: Element {
         return Element(
             number: 84,
@@ -1259,6 +1431,8 @@ extension Elements {
             category: Element.Category(rawValue: "209").unsafelyUnwrapped
         )
     }
+    
+    /// Astatine
     public static var astatine: Element {
         return Element(
             number: 85,
@@ -1274,6 +1448,8 @@ extension Elements {
             category: Element.Category(rawValue: "210").unsafelyUnwrapped
         )
     }
+    
+    /// Radon
     public static var radon: Element {
         return Element(
             number: 86,
@@ -1289,6 +1465,8 @@ extension Elements {
             category: Element.Category(rawValue: "222").unsafelyUnwrapped
         )
     }
+    
+    /// Francium
     public static var francium: Element {
         return Element(
             number: 87,
@@ -1304,6 +1482,8 @@ extension Elements {
             category: Element.Category(rawValue: "223").unsafelyUnwrapped
         )
     }
+    
+    /// Radium
     public static var radium: Element {
         return Element(
             number: 88,
@@ -1319,6 +1499,8 @@ extension Elements {
             category: Element.Category(rawValue: "226").unsafelyUnwrapped
         )
     }
+    
+    /// Actinium
     public static var actinium: Element {
         return Element(
             number: 89,
@@ -1334,6 +1516,8 @@ extension Elements {
             category: Element.Category(rawValue: "227").unsafelyUnwrapped
         )
     }
+    
+    /// Thorium
     public static var thorium: Element {
         return Element(
             number: 90,
@@ -1349,6 +1533,8 @@ extension Elements {
             category: Element.Category(rawValue: "232.03774").unsafelyUnwrapped
         )
     }
+    
+    /// Protactinium
     public static var protactinium: Element {
         return Element(
             number: 91,
@@ -1364,6 +1550,8 @@ extension Elements {
             category: Element.Category(rawValue: "231.035882").unsafelyUnwrapped
         )
     }
+    
+    /// Uranium
     public static var uranium: Element {
         return Element(
             number: 92,
@@ -1379,6 +1567,8 @@ extension Elements {
             category: Element.Category(rawValue: "238.028913").unsafelyUnwrapped
         )
     }
+    
+    /// Neptunium
     public static var neptunium: Element {
         return Element(
             number: 93,
@@ -1394,6 +1584,8 @@ extension Elements {
             category: Element.Category(rawValue: "237").unsafelyUnwrapped
         )
     }
+    
+    /// Plutonium
     public static var plutonium: Element {
         return Element(
             number: 94,
@@ -1409,6 +1601,8 @@ extension Elements {
             category: Element.Category(rawValue: "244").unsafelyUnwrapped
         )
     }
+    
+    /// Americium
     public static var americium: Element {
         return Element(
             number: 95,
@@ -1424,6 +1618,8 @@ extension Elements {
             category: Element.Category(rawValue: "243").unsafelyUnwrapped
         )
     }
+    
+    /// Curium
     public static var curium: Element {
         return Element(
             number: 96,
@@ -1439,6 +1635,8 @@ extension Elements {
             category: Element.Category(rawValue: "247").unsafelyUnwrapped
         )
     }
+    
+    /// Berkelium
     public static var berkelium: Element {
         return Element(
             number: 97,
@@ -1454,6 +1652,8 @@ extension Elements {
             category: Element.Category(rawValue: "247").unsafelyUnwrapped
         )
     }
+    
+    /// Californium
     public static var californium: Element {
         return Element(
             number: 98,
@@ -1469,6 +1669,8 @@ extension Elements {
             category: Element.Category(rawValue: "251").unsafelyUnwrapped
         )
     }
+    
+    /// Einsteinium
     public static var einsteinium: Element {
         return Element(
             number: 99,
@@ -1484,6 +1686,8 @@ extension Elements {
             category: Element.Category(rawValue: "252").unsafelyUnwrapped
         )
     }
+    
+    /// Fermium
     public static var fermium: Element {
         return Element(
             number: 100,
@@ -1499,6 +1703,8 @@ extension Elements {
             category: Element.Category(rawValue: "257").unsafelyUnwrapped
         )
     }
+    
+    /// Mendelevium
     public static var mendelevium: Element {
         return Element(
             number: 101,
@@ -1514,6 +1720,8 @@ extension Elements {
             category: Element.Category(rawValue: "258").unsafelyUnwrapped
         )
     }
+    
+    /// Nobelium
     public static var nobelium: Element {
         return Element(
             number: 102,
@@ -1529,6 +1737,8 @@ extension Elements {
             category: Element.Category(rawValue: "259").unsafelyUnwrapped
         )
     }
+    
+    /// Lawrencium
     public static var lawrencium: Element {
         return Element(
             number: 103,
@@ -1544,6 +1754,8 @@ extension Elements {
             category: Element.Category(rawValue: "266").unsafelyUnwrapped
         )
     }
+    
+    /// Rutherfordium
     public static var rutherfordium: Element {
         return Element(
             number: 104,
@@ -1559,6 +1771,8 @@ extension Elements {
             category: Element.Category(rawValue: "267").unsafelyUnwrapped
         )
     }
+    
+    /// Dubnium
     public static var dubnium: Element {
         return Element(
             number: 105,
@@ -1574,6 +1788,8 @@ extension Elements {
             category: Element.Category(rawValue: "268").unsafelyUnwrapped
         )
     }
+    
+    /// Seaborgium
     public static var seaborgium: Element {
         return Element(
             number: 106,
@@ -1589,6 +1805,8 @@ extension Elements {
             category: Element.Category(rawValue: "269").unsafelyUnwrapped
         )
     }
+    
+    /// Bohrium
     public static var bohrium: Element {
         return Element(
             number: 107,
@@ -1604,6 +1822,8 @@ extension Elements {
             category: Element.Category(rawValue: "270").unsafelyUnwrapped
         )
     }
+    
+    /// Hassium
     public static var hassium: Element {
         return Element(
             number: 108,
@@ -1619,6 +1839,8 @@ extension Elements {
             category: Element.Category(rawValue: "269").unsafelyUnwrapped
         )
     }
+    
+    /// Meitnerium
     public static var meitnerium: Element {
         return Element(
             number: 109,
@@ -1634,6 +1856,8 @@ extension Elements {
             category: Element.Category(rawValue: "278").unsafelyUnwrapped
         )
     }
+    
+    /// Darmstadtium
     public static var darmstadtium: Element {
         return Element(
             number: 110,
@@ -1649,6 +1873,8 @@ extension Elements {
             category: Element.Category(rawValue: "281").unsafelyUnwrapped
         )
     }
+    
+    /// Roentgenium
     public static var roentgenium: Element {
         return Element(
             number: 111,
@@ -1664,6 +1890,8 @@ extension Elements {
             category: Element.Category(rawValue: "282").unsafelyUnwrapped
         )
     }
+    
+    /// Copernicium
     public static var copernicium: Element {
         return Element(
             number: 112,
@@ -1679,6 +1907,8 @@ extension Elements {
             category: Element.Category(rawValue: "285").unsafelyUnwrapped
         )
     }
+    
+    /// Nihonium
     public static var nihonium: Element {
         return Element(
             number: 113,
@@ -1694,6 +1924,8 @@ extension Elements {
             category: Element.Category(rawValue: "286").unsafelyUnwrapped
         )
     }
+    
+    /// Flerovium
     public static var flerovium: Element {
         return Element(
             number: 114,
@@ -1709,6 +1941,8 @@ extension Elements {
             category: Element.Category(rawValue: "289").unsafelyUnwrapped
         )
     }
+    
+    /// Moscovium
     public static var moscovium: Element {
         return Element(
             number: 115,
@@ -1724,6 +1958,8 @@ extension Elements {
             category: Element.Category(rawValue: "289").unsafelyUnwrapped
         )
     }
+    
+    /// Livermorium
     public static var livermorium: Element {
         return Element(
             number: 116,
@@ -1739,6 +1975,8 @@ extension Elements {
             category: Element.Category(rawValue: "293").unsafelyUnwrapped
         )
     }
+    
+    /// Tennessine
     public static var tennessine: Element {
         return Element(
             number: 117,
@@ -1754,6 +1992,8 @@ extension Elements {
             category: Element.Category(rawValue: "294").unsafelyUnwrapped
         )
     }
+    
+    /// Oganesson
     public static var oganesson: Element {
         return Element(
             number: 118,
@@ -1769,6 +2009,8 @@ extension Elements {
             category: Element.Category(rawValue: "294").unsafelyUnwrapped
         )
     }
+    
+    /// Ununennium
     public static var ununennium: Element {
         return Element(
             number: 119,

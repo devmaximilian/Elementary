@@ -29,12 +29,6 @@ extension Element {
 }
 
 extension Element {
-    public static func custom(number: Int, period: Int, symbol: String, name: String, mass: Double, density: Double?, meltingPoint: Double?, boilingPoint: Double?, shells: [Int], phase: Phase, category: Category) -> Element {
-        return Element(number: number, period: period, symbol: symbol, name: name, mass: mass, density: density, meltingPoint: meltingPoint, boilingPoint: boilingPoint, shells: shells, phase: phase, category: category)
-    }
-}
-
-extension Element {
     public enum Phase: String {
         case gas, liquid, plasma, solid
     }
