@@ -13,6 +13,7 @@ public struct Element {
     public let phase: Phase
     public let category: Category
     public let position: (x: Int, y: Int)
+    public let source: String
 }
 
 extension Element {

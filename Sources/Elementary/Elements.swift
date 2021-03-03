@@ -1,7 +1,7 @@
 extension Elements {
     /// - Returns: A custom element using the provided data.
-    public static func custom(number: Int, period: Int, symbol: String, name: String, mass: Double, density: Double?, meltingPoint: Double?, boilingPoint: Double?, shells: [Int], phase: Element.Phase, category: Element.Category, position: (x: Int, y: Int)) -> Element {
-        return Element(number: number, period: period, symbol: symbol, name: name, mass: mass, density: density, meltingPoint: meltingPoint, boilingPoint: boilingPoint, shells: shells, phase: phase, category: category, position: position)
+    public static func custom(number: Int, period: Int, symbol: String, name: String, mass: Double, density: Double?, meltingPoint: Double?, boilingPoint: Double?, shells: [Int], phase: Element.Phase, category: Element.Category, position: (x: Int, y: Int), source: String) -> Element {
+        return Element(number: number, period: period, symbol: symbol, name: name, mass: mass, density: density, meltingPoint: meltingPoint, boilingPoint: boilingPoint, shells: shells, phase: phase, category: category, position: position, source: source)
     }
     
     /// Hydrogen
@@ -18,7 +18,8 @@ extension Elements {
             shells: [1],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("diatomic nonmetal"),
-            position: (1, 1)
+            position: (1, 1),
+            source: "https://en.wikipedia.org/wiki/Hydrogen"
         )
     }
     
@@ -36,7 +37,8 @@ extension Elements {
             shells: [2],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("noble gas"),
-            position: (18, 1)
+            position: (18, 1),
+            source: "https://en.wikipedia.org/wiki/Helium"
         )
     }
     
@@ -54,7 +56,8 @@ extension Elements {
             shells: [2, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkali metal"),
-            position: (1, 2)
+            position: (1, 2),
+            source: "https://en.wikipedia.org/wiki/Lithium"
         )
     }
     
@@ -72,7 +75,8 @@ extension Elements {
             shells: [2, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkaline earth metal"),
-            position: (2, 2)
+            position: (2, 2),
+            source: "https://en.wikipedia.org/wiki/Beryllium"
         )
     }
     
@@ -90,7 +94,8 @@ extension Elements {
             shells: [2, 3],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("metalloid"),
-            position: (13, 2)
+            position: (13, 2),
+            source: "https://en.wikipedia.org/wiki/Boron"
         )
     }
     
@@ -108,7 +113,8 @@ extension Elements {
             shells: [2, 4],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("polyatomic nonmetal"),
-            position: (14, 2)
+            position: (14, 2),
+            source: "https://en.wikipedia.org/wiki/Carbon"
         )
     }
     
@@ -126,7 +132,8 @@ extension Elements {
             shells: [2, 5],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("diatomic nonmetal"),
-            position: (15, 2)
+            position: (15, 2),
+            source: "https://en.wikipedia.org/wiki/Nitrogen"
         )
     }
     
@@ -144,7 +151,8 @@ extension Elements {
             shells: [2, 6],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("diatomic nonmetal"),
-            position: (16, 2)
+            position: (16, 2),
+            source: "https://en.wikipedia.org/wiki/Oxygen"
         )
     }
     
@@ -162,7 +170,8 @@ extension Elements {
             shells: [2, 7],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("diatomic nonmetal"),
-            position: (17, 2)
+            position: (17, 2),
+            source: "https://en.wikipedia.org/wiki/Fluorine"
         )
     }
     
@@ -180,7 +189,8 @@ extension Elements {
             shells: [2, 8],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("noble gas"),
-            position: (18, 2)
+            position: (18, 2),
+            source: "https://en.wikipedia.org/wiki/Neon"
         )
     }
     
@@ -198,7 +208,8 @@ extension Elements {
             shells: [2, 8, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkali metal"),
-            position: (1, 3)
+            position: (1, 3),
+            source: "https://en.wikipedia.org/wiki/Sodium"
         )
     }
     
@@ -216,7 +227,8 @@ extension Elements {
             shells: [2, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkaline earth metal"),
-            position: (2, 3)
+            position: (2, 3),
+            source: "https://en.wikipedia.org/wiki/Magnesium"
         )
     }
     
@@ -234,7 +246,8 @@ extension Elements {
             shells: [2, 8, 3],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("post-transition metal"),
-            position: (13, 3)
+            position: (13, 3),
+            source: "https://en.wikipedia.org/wiki/Aluminium"
         )
     }
     
@@ -252,7 +265,8 @@ extension Elements {
             shells: [2, 8, 4],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("metalloid"),
-            position: (14, 3)
+            position: (14, 3),
+            source: "https://en.wikipedia.org/wiki/Silicon"
         )
     }
     
@@ -270,7 +284,8 @@ extension Elements {
             shells: [2, 8, 5],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("polyatomic nonmetal"),
-            position: (15, 3)
+            position: (15, 3),
+            source: "https://en.wikipedia.org/wiki/Phosphorus"
         )
     }
     
@@ -288,7 +303,8 @@ extension Elements {
             shells: [2, 8, 6],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("polyatomic nonmetal"),
-            position: (16, 3)
+            position: (16, 3),
+            source: "https://en.wikipedia.org/wiki/Sulfur"
         )
     }
     
@@ -306,7 +322,8 @@ extension Elements {
             shells: [2, 8, 7],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("diatomic nonmetal"),
-            position: (17, 3)
+            position: (17, 3),
+            source: "https://en.wikipedia.org/wiki/Chlorine"
         )
     }
     
@@ -324,7 +341,8 @@ extension Elements {
             shells: [2, 8, 8],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("noble gas"),
-            position: (18, 3)
+            position: (18, 3),
+            source: "https://en.wikipedia.org/wiki/Argon"
         )
     }
     
@@ -342,7 +360,8 @@ extension Elements {
             shells: [2, 8, 8, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkali metal"),
-            position: (1, 4)
+            position: (1, 4),
+            source: "https://en.wikipedia.org/wiki/Potassium"
         )
     }
     
@@ -360,7 +379,8 @@ extension Elements {
             shells: [2, 8, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkaline earth metal"),
-            position: (2, 4)
+            position: (2, 4),
+            source: "https://en.wikipedia.org/wiki/Calcium"
         )
     }
     
@@ -378,7 +398,8 @@ extension Elements {
             shells: [2, 8, 9, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (3, 4)
+            position: (3, 4),
+            source: "https://en.wikipedia.org/wiki/Scandium"
         )
     }
     
@@ -396,7 +417,8 @@ extension Elements {
             shells: [2, 8, 10, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (4, 4)
+            position: (4, 4),
+            source: "https://en.wikipedia.org/wiki/Titanium"
         )
     }
     
@@ -414,7 +436,8 @@ extension Elements {
             shells: [2, 8, 11, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (5, 4)
+            position: (5, 4),
+            source: "https://en.wikipedia.org/wiki/Vanadium"
         )
     }
     
@@ -432,7 +455,8 @@ extension Elements {
             shells: [2, 8, 13, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (6, 4)
+            position: (6, 4),
+            source: "https://en.wikipedia.org/wiki/Chromium"
         )
     }
     
@@ -450,7 +474,8 @@ extension Elements {
             shells: [2, 8, 13, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (7, 4)
+            position: (7, 4),
+            source: "https://en.wikipedia.org/wiki/Manganese"
         )
     }
     
@@ -468,7 +493,8 @@ extension Elements {
             shells: [2, 8, 14, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (8, 4)
+            position: (8, 4),
+            source: "https://en.wikipedia.org/wiki/Iron"
         )
     }
     
@@ -486,7 +512,8 @@ extension Elements {
             shells: [2, 8, 15, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (9, 4)
+            position: (9, 4),
+            source: "https://en.wikipedia.org/wiki/Cobalt"
         )
     }
     
@@ -504,7 +531,8 @@ extension Elements {
             shells: [2, 8, 16, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (10, 4)
+            position: (10, 4),
+            source: "https://en.wikipedia.org/wiki/Nickel"
         )
     }
     
@@ -522,7 +550,8 @@ extension Elements {
             shells: [2, 8, 18, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (11, 4)
+            position: (11, 4),
+            source: "https://en.wikipedia.org/wiki/Copper"
         )
     }
     
@@ -540,7 +569,8 @@ extension Elements {
             shells: [2, 8, 18, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (12, 4)
+            position: (12, 4),
+            source: "https://en.wikipedia.org/wiki/Zinc"
         )
     }
     
@@ -558,7 +588,8 @@ extension Elements {
             shells: [2, 8, 18, 3],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("post-transition metal"),
-            position: (13, 4)
+            position: (13, 4),
+            source: "https://en.wikipedia.org/wiki/Gallium"
         )
     }
     
@@ -576,7 +607,8 @@ extension Elements {
             shells: [2, 8, 18, 4],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("metalloid"),
-            position: (14, 4)
+            position: (14, 4),
+            source: "https://en.wikipedia.org/wiki/Germanium"
         )
     }
     
@@ -594,7 +626,8 @@ extension Elements {
             shells: [2, 8, 18, 5],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("metalloid"),
-            position: (15, 4)
+            position: (15, 4),
+            source: "https://en.wikipedia.org/wiki/Arsenic"
         )
     }
     
@@ -612,7 +645,8 @@ extension Elements {
             shells: [2, 8, 18, 6],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("polyatomic nonmetal"),
-            position: (16, 4)
+            position: (16, 4),
+            source: "https://en.wikipedia.org/wiki/Selenium"
         )
     }
     
@@ -630,7 +664,8 @@ extension Elements {
             shells: [2, 8, 18, 7],
             phase: Element.Phase(rawValue: "liquid").unsafelyUnwrapped,
             category: Element.Category("diatomic nonmetal"),
-            position: (17, 4)
+            position: (17, 4),
+            source: "https://en.wikipedia.org/wiki/Bromine"
         )
     }
     
@@ -648,7 +683,8 @@ extension Elements {
             shells: [2, 8, 18, 8],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("noble gas"),
-            position: (18, 4)
+            position: (18, 4),
+            source: "https://en.wikipedia.org/wiki/Krypton"
         )
     }
     
@@ -666,7 +702,8 @@ extension Elements {
             shells: [2, 8, 18, 8, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkali metal"),
-            position: (1, 5)
+            position: (1, 5),
+            source: "https://en.wikipedia.org/wiki/Rubidium"
         )
     }
     
@@ -684,7 +721,8 @@ extension Elements {
             shells: [2, 8, 18, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkaline earth metal"),
-            position: (2, 5)
+            position: (2, 5),
+            source: "https://en.wikipedia.org/wiki/Strontium"
         )
     }
     
@@ -702,7 +740,8 @@ extension Elements {
             shells: [2, 8, 18, 9, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (3, 5)
+            position: (3, 5),
+            source: "https://en.wikipedia.org/wiki/Yttrium"
         )
     }
     
@@ -720,7 +759,8 @@ extension Elements {
             shells: [2, 8, 18, 10, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (4, 5)
+            position: (4, 5),
+            source: "https://en.wikipedia.org/wiki/Zirconium"
         )
     }
     
@@ -738,7 +778,8 @@ extension Elements {
             shells: [2, 8, 18, 12, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (5, 5)
+            position: (5, 5),
+            source: "https://en.wikipedia.org/wiki/Niobium"
         )
     }
     
@@ -756,7 +797,8 @@ extension Elements {
             shells: [2, 8, 18, 13, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (6, 5)
+            position: (6, 5),
+            source: "https://en.wikipedia.org/wiki/Molybdenum"
         )
     }
     
@@ -774,7 +816,8 @@ extension Elements {
             shells: [2, 8, 18, 13, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (7, 5)
+            position: (7, 5),
+            source: "https://en.wikipedia.org/wiki/Technetium"
         )
     }
     
@@ -792,7 +835,8 @@ extension Elements {
             shells: [2, 8, 18, 15, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (8, 5)
+            position: (8, 5),
+            source: "https://en.wikipedia.org/wiki/Ruthenium"
         )
     }
     
@@ -810,7 +854,8 @@ extension Elements {
             shells: [2, 8, 18, 16, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (9, 5)
+            position: (9, 5),
+            source: "https://en.wikipedia.org/wiki/Rhodium"
         )
     }
     
@@ -828,7 +873,8 @@ extension Elements {
             shells: [2, 8, 18, 18],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (10, 5)
+            position: (10, 5),
+            source: "https://en.wikipedia.org/wiki/Palladium"
         )
     }
     
@@ -846,7 +892,8 @@ extension Elements {
             shells: [2, 8, 18, 18, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (11, 5)
+            position: (11, 5),
+            source: "https://en.wikipedia.org/wiki/Silver"
         )
     }
     
@@ -864,7 +911,8 @@ extension Elements {
             shells: [2, 8, 18, 18, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (12, 5)
+            position: (12, 5),
+            source: "https://en.wikipedia.org/wiki/Cadmium"
         )
     }
     
@@ -882,7 +930,8 @@ extension Elements {
             shells: [2, 8, 18, 18, 3],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("post-transition metal"),
-            position: (13, 5)
+            position: (13, 5),
+            source: "https://en.wikipedia.org/wiki/Indium"
         )
     }
     
@@ -900,7 +949,8 @@ extension Elements {
             shells: [2, 8, 18, 18, 4],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("post-transition metal"),
-            position: (14, 5)
+            position: (14, 5),
+            source: "https://en.wikipedia.org/wiki/Tin"
         )
     }
     
@@ -918,7 +968,8 @@ extension Elements {
             shells: [2, 8, 18, 18, 5],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("metalloid"),
-            position: (15, 5)
+            position: (15, 5),
+            source: "https://en.wikipedia.org/wiki/Antimony"
         )
     }
     
@@ -936,7 +987,8 @@ extension Elements {
             shells: [2, 8, 18, 18, 6],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("metalloid"),
-            position: (16, 5)
+            position: (16, 5),
+            source: "https://en.wikipedia.org/wiki/Tellurium"
         )
     }
     
@@ -954,7 +1006,8 @@ extension Elements {
             shells: [2, 8, 18, 18, 7],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("diatomic nonmetal"),
-            position: (17, 5)
+            position: (17, 5),
+            source: "https://en.wikipedia.org/wiki/Iodine"
         )
     }
     
@@ -972,7 +1025,8 @@ extension Elements {
             shells: [2, 8, 18, 18, 8],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("noble gas"),
-            position: (18, 5)
+            position: (18, 5),
+            source: "https://en.wikipedia.org/wiki/Xenon"
         )
     }
     
@@ -990,7 +1044,8 @@ extension Elements {
             shells: [2, 8, 18, 18, 8, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkali metal"),
-            position: (1, 6)
+            position: (1, 6),
+            source: "https://en.wikipedia.org/wiki/Cesium"
         )
     }
     
@@ -1008,7 +1063,8 @@ extension Elements {
             shells: [2, 8, 18, 18, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkaline earth metal"),
-            position: (2, 6)
+            position: (2, 6),
+            source: "https://en.wikipedia.org/wiki/Barium"
         )
     }
     
@@ -1026,7 +1082,8 @@ extension Elements {
             shells: [2, 8, 18, 18, 9, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (3, 9)
+            position: (3, 9),
+            source: "https://en.wikipedia.org/wiki/Lanthanum"
         )
     }
     
@@ -1044,7 +1101,8 @@ extension Elements {
             shells: [2, 8, 18, 19, 9, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (4, 9)
+            position: (4, 9),
+            source: "https://en.wikipedia.org/wiki/Cerium"
         )
     }
     
@@ -1062,7 +1120,8 @@ extension Elements {
             shells: [2, 8, 18, 21, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (5, 9)
+            position: (5, 9),
+            source: "https://en.wikipedia.org/wiki/Praseodymium"
         )
     }
     
@@ -1080,7 +1139,8 @@ extension Elements {
             shells: [2, 8, 18, 22, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (6, 9)
+            position: (6, 9),
+            source: "https://en.wikipedia.org/wiki/Neodymium"
         )
     }
     
@@ -1098,7 +1158,8 @@ extension Elements {
             shells: [2, 8, 18, 23, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (7, 9)
+            position: (7, 9),
+            source: "https://en.wikipedia.org/wiki/Promethium"
         )
     }
     
@@ -1116,7 +1177,8 @@ extension Elements {
             shells: [2, 8, 18, 24, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (8, 9)
+            position: (8, 9),
+            source: "https://en.wikipedia.org/wiki/Samarium"
         )
     }
     
@@ -1134,7 +1196,8 @@ extension Elements {
             shells: [2, 8, 18, 25, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (9, 9)
+            position: (9, 9),
+            source: "https://en.wikipedia.org/wiki/Europium"
         )
     }
     
@@ -1152,7 +1215,8 @@ extension Elements {
             shells: [2, 8, 18, 25, 9, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (10, 9)
+            position: (10, 9),
+            source: "https://en.wikipedia.org/wiki/Gadolinium"
         )
     }
     
@@ -1170,7 +1234,8 @@ extension Elements {
             shells: [2, 8, 18, 27, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (11, 9)
+            position: (11, 9),
+            source: "https://en.wikipedia.org/wiki/Terbium"
         )
     }
     
@@ -1188,7 +1253,8 @@ extension Elements {
             shells: [2, 8, 18, 28, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (12, 9)
+            position: (12, 9),
+            source: "https://en.wikipedia.org/wiki/Dysprosium"
         )
     }
     
@@ -1206,7 +1272,8 @@ extension Elements {
             shells: [2, 8, 18, 29, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (13, 9)
+            position: (13, 9),
+            source: "https://en.wikipedia.org/wiki/Holmium"
         )
     }
     
@@ -1224,7 +1291,8 @@ extension Elements {
             shells: [2, 8, 18, 30, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (14, 9)
+            position: (14, 9),
+            source: "https://en.wikipedia.org/wiki/Erbium"
         )
     }
     
@@ -1242,7 +1310,8 @@ extension Elements {
             shells: [2, 8, 18, 31, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (15, 9)
+            position: (15, 9),
+            source: "https://en.wikipedia.org/wiki/Thulium"
         )
     }
     
@@ -1260,7 +1329,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (16, 9)
+            position: (16, 9),
+            source: "https://en.wikipedia.org/wiki/Ytterbium"
         )
     }
     
@@ -1278,7 +1348,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 9, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("lanthanide"),
-            position: (17, 9)
+            position: (17, 9),
+            source: "https://en.wikipedia.org/wiki/Lutetium"
         )
     }
     
@@ -1296,7 +1367,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 10, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (4, 6)
+            position: (4, 6),
+            source: "https://en.wikipedia.org/wiki/Hafnium"
         )
     }
     
@@ -1314,7 +1386,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 11, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (5, 6)
+            position: (5, 6),
+            source: "https://en.wikipedia.org/wiki/Tantalum"
         )
     }
     
@@ -1332,7 +1405,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 12, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (6, 6)
+            position: (6, 6),
+            source: "https://en.wikipedia.org/wiki/Tungsten"
         )
     }
     
@@ -1350,7 +1424,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 13, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (7, 6)
+            position: (7, 6),
+            source: "https://en.wikipedia.org/wiki/Rhenium"
         )
     }
     
@@ -1368,7 +1443,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 14, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (8, 6)
+            position: (8, 6),
+            source: "https://en.wikipedia.org/wiki/Osmium"
         )
     }
     
@@ -1386,7 +1462,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 15, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (9, 6)
+            position: (9, 6),
+            source: "https://en.wikipedia.org/wiki/Iridium"
         )
     }
     
@@ -1404,7 +1481,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 17, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (10, 6)
+            position: (10, 6),
+            source: "https://en.wikipedia.org/wiki/Platinum"
         )
     }
     
@@ -1422,7 +1500,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (11, 6)
+            position: (11, 6),
+            source: "https://en.wikipedia.org/wiki/Gold"
         )
     }
     
@@ -1440,7 +1519,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 2],
             phase: Element.Phase(rawValue: "liquid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (12, 6)
+            position: (12, 6),
+            source: "https://en.wikipedia.org/wiki/Mercury (Element)"
         )
     }
     
@@ -1458,7 +1538,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 3],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("post-transition metal"),
-            position: (13, 6)
+            position: (13, 6),
+            source: "https://en.wikipedia.org/wiki/Thallium"
         )
     }
     
@@ -1476,7 +1557,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 4],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("post-transition metal"),
-            position: (14, 6)
+            position: (14, 6),
+            source: "https://en.wikipedia.org/wiki/Lead_(element)"
         )
     }
     
@@ -1494,7 +1576,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 5],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("post-transition metal"),
-            position: (15, 6)
+            position: (15, 6),
+            source: "https://en.wikipedia.org/wiki/Bismuth"
         )
     }
     
@@ -1512,7 +1595,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 6],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("post-transition metal"),
-            position: (16, 6)
+            position: (16, 6),
+            source: "https://en.wikipedia.org/wiki/Polonium"
         )
     }
     
@@ -1530,7 +1614,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 7],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("metalloid"),
-            position: (17, 6)
+            position: (17, 6),
+            source: "https://en.wikipedia.org/wiki/Astatine"
         )
     }
     
@@ -1548,7 +1633,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 8],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("noble gas"),
-            position: (18, 6)
+            position: (18, 6),
+            source: "https://en.wikipedia.org/wiki/Radon"
         )
     }
     
@@ -1566,7 +1652,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 8, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkali metal"),
-            position: (1, 7)
+            position: (1, 7),
+            source: "https://en.wikipedia.org/wiki/Francium"
         )
     }
     
@@ -1584,7 +1671,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("alkaline earth metal"),
-            position: (2, 7)
+            position: (2, 7),
+            source: "https://en.wikipedia.org/wiki/Radium"
         )
     }
     
@@ -1602,7 +1690,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 9, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (3, 10)
+            position: (3, 10),
+            source: "https://en.wikipedia.org/wiki/Actinium"
         )
     }
     
@@ -1620,7 +1709,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 18, 10, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (4, 10)
+            position: (4, 10),
+            source: "https://en.wikipedia.org/wiki/Thorium"
         )
     }
     
@@ -1638,7 +1728,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 20, 9, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (5, 10)
+            position: (5, 10),
+            source: "https://en.wikipedia.org/wiki/Protactinium"
         )
     }
     
@@ -1656,7 +1747,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 21, 9, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (6, 10)
+            position: (6, 10),
+            source: "https://en.wikipedia.org/wiki/Uranium"
         )
     }
     
@@ -1674,7 +1766,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 22, 9, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (7, 10)
+            position: (7, 10),
+            source: "https://en.wikipedia.org/wiki/Neptunium"
         )
     }
     
@@ -1692,7 +1785,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 24, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (8, 10)
+            position: (8, 10),
+            source: "https://en.wikipedia.org/wiki/Plutonium"
         )
     }
     
@@ -1710,7 +1804,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 25, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (9, 10)
+            position: (9, 10),
+            source: "https://en.wikipedia.org/wiki/Americium"
         )
     }
     
@@ -1728,7 +1823,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 25, 9, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (10, 10)
+            position: (10, 10),
+            source: "https://en.wikipedia.org/wiki/Curium"
         )
     }
     
@@ -1746,7 +1842,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 27, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (11, 10)
+            position: (11, 10),
+            source: "https://en.wikipedia.org/wiki/Berkelium"
         )
     }
     
@@ -1764,7 +1861,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 28, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (12, 10)
+            position: (12, 10),
+            source: "https://en.wikipedia.org/wiki/Californium"
         )
     }
     
@@ -1782,7 +1880,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 29, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (13, 10)
+            position: (13, 10),
+            source: "https://en.wikipedia.org/wiki/Einsteinium"
         )
     }
     
@@ -1800,7 +1899,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 30, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (14, 10)
+            position: (14, 10),
+            source: "https://en.wikipedia.org/wiki/Fermium"
         )
     }
     
@@ -1818,7 +1918,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 31, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (15, 10)
+            position: (15, 10),
+            source: "https://en.wikipedia.org/wiki/Mendelevium"
         )
     }
     
@@ -1836,7 +1937,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 8, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (16, 10)
+            position: (16, 10),
+            source: "https://en.wikipedia.org/wiki/Nobelium"
         )
     }
     
@@ -1854,7 +1956,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 8, 3],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("actinide"),
-            position: (17, 10)
+            position: (17, 10),
+            source: "https://en.wikipedia.org/wiki/Lawrencium"
         )
     }
     
@@ -1872,7 +1975,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 10, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (4, 7)
+            position: (4, 7),
+            source: "https://en.wikipedia.org/wiki/Rutherfordium"
         )
     }
     
@@ -1890,7 +1994,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 11, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (5, 7)
+            position: (5, 7),
+            source: "https://en.wikipedia.org/wiki/Dubnium"
         )
     }
     
@@ -1908,7 +2013,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 12, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (6, 7)
+            position: (6, 7),
+            source: "https://en.wikipedia.org/wiki/Seaborgium"
         )
     }
     
@@ -1926,7 +2032,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 13, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (7, 7)
+            position: (7, 7),
+            source: "https://en.wikipedia.org/wiki/Bohrium"
         )
     }
     
@@ -1944,7 +2051,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 14, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (8, 7)
+            position: (8, 7),
+            source: "https://en.wikipedia.org/wiki/Hassium"
         )
     }
     
@@ -1962,7 +2070,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 15, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("unknown, probably transition metal"),
-            position: (9, 7)
+            position: (9, 7),
+            source: "https://en.wikipedia.org/wiki/Meitnerium"
         )
     }
     
@@ -1980,7 +2089,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 16, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("unknown, probably transition metal"),
-            position: (10, 7)
+            position: (10, 7),
+            source: "https://en.wikipedia.org/wiki/Darmstadtium"
         )
     }
     
@@ -1998,7 +2108,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 17, 2],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("unknown, probably transition metal"),
-            position: (11, 7)
+            position: (11, 7),
+            source: "https://en.wikipedia.org/wiki/Roentgenium"
         )
     }
     
@@ -2016,7 +2127,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 18, 2],
             phase: Element.Phase(rawValue: "gas").unsafelyUnwrapped,
             category: Element.Category("transition metal"),
-            position: (12, 7)
+            position: (12, 7),
+            source: "https://en.wikipedia.org/wiki/Copernicium"
         )
     }
     
@@ -2034,7 +2146,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 18, 3],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("unknown, probably transition metal"),
-            position: (13, 7)
+            position: (13, 7),
+            source: "https://en.wikipedia.org/wiki/Ununtrium"
         )
     }
     
@@ -2052,7 +2165,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 18, 4],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("post-transition metal"),
-            position: (14, 7)
+            position: (14, 7),
+            source: "https://en.wikipedia.org/wiki/Flerovium"
         )
     }
     
@@ -2070,7 +2184,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 18, 5],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("unknown, probably post-transition metal"),
-            position: (15, 7)
+            position: (15, 7),
+            source: "https://en.wikipedia.org/wiki/Ununpentium"
         )
     }
     
@@ -2088,7 +2203,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 18, 6],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("unknown, probably post-transition metal"),
-            position: (16, 7)
+            position: (16, 7),
+            source: "https://en.wikipedia.org/wiki/Livermorium"
         )
     }
     
@@ -2106,7 +2222,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 18, 7],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("unknown, probably metalloid"),
-            position: (17, 7)
+            position: (17, 7),
+            source: "https://en.wikipedia.org/wiki/Tennessine"
         )
     }
     
@@ -2124,7 +2241,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 18, 8],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("unknown, predicted to be noble gas"),
-            position: (18, 7)
+            position: (18, 7),
+            source: "https://en.wikipedia.org/wiki/Oganesson"
         )
     }
     
@@ -2142,7 +2260,8 @@ extension Elements {
             shells: [2, 8, 18, 32, 32, 18, 8, 1],
             phase: Element.Phase(rawValue: "solid").unsafelyUnwrapped,
             category: Element.Category("unknown, but predicted to be an alkali metal"),
-            position: (1, 8)
+            position: (1, 8),
+            source: "https://en.wikipedia.org/wiki/Ununennium"
         )
     }
 }
