@@ -2,8 +2,6 @@
 
 Elementary is a Swift package that provides information about elements in the Periodic Table.
 
-![Swift](https://github.com/devmaximilian/Elementary/workflows/Swift/badge.svg)
-
 Uses [Periodic-Table-JSON](https://github.com/Bowserinator/Periodic-Table-JSON) by [Bowserinator](https://github.com/Bowserinator) to generate elements.
 
 ---
